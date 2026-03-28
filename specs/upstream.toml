@@ -1,0 +1,13 @@
+enabled = true
+
+[[sources]]
+url = "https://raw.githubusercontent.com/frankhommers/bitwarden-openapi-generator/main/specs/vaultwarden/1.35.4/vaultwarden-identity.json"
+target = "specs/vaultwarden-identity.json"
+
+[[sources]]
+url = "https://raw.githubusercontent.com/frankhommers/bitwarden-openapi-generator/main/specs/vaultwarden/1.35.4/vaultwarden-vault.json"
+target = "specs/vaultwarden-vault.json"
+
+[[sources]]
+url = "https://raw.githubusercontent.com/frankhommers/bitwarden-openapi-generator/main/specs/vaultwarden/1.35.4/vaultwarden-public.json"
+target = "specs/vaultwarden-public.json"
