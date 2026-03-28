@@ -18,45 +18,7 @@ dotnet add package Apigen.Vaultwarden
 
 ## Usage
 
-```csharp
-using Apigen.Vaultwarden.Client;
-using Apigen.Vaultwarden.Models;
-
-// All Vaultwarden endpoints share a single base URL
-using var httpClient = new HttpClient
-{
-    BaseAddress = new Uri("https://your-vaultwarden-instance/")
-};
-var client = new VaultwardenApiClient(httpClient);
-
-// Prelogin (get KDF parameters)
-var prelogin = await client.Accounts.AccountsPostPreloginAsync(
-    new PasswordPreloginRequestModel { Email = "user@example.com" });
-
-// Authenticate
-var token = await client.Connect.ConnectTokenAsync(new ConnectTokenRequest
-{
-    GrantType = "password",
-    Username = "user@example.com",
-    Password = hashedPassword,
-    Scope = "api offline_access",
-    ClientId = "cli",
-    DeviceType = 9,
-    DeviceIdentifier = Guid.NewGuid().ToString(),
-    DeviceName = "my-app",
-});
-
-// Add Bearer token for subsequent calls
-httpClient.DefaultRequestHeaders.Authorization =
-    new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token.AccessToken);
-
-// Sync vault
-var sync = await client.Sync.SyncGetAsync(new SyncGetRequest());
-```
-
-## Example
-
-See [`examples/Apigen.Vaultwarden.TestClient`](examples/Apigen.Vaultwarden.TestClient) for a complete working example that authenticates, syncs the vault, decrypts items, and displays them — equivalent to `bw login` + `bw list items`.
+Vaultwarden authentication requires PBKDF2/Argon2id key derivation and encrypted vault decryption. See the [example project](examples/Apigen.Vaultwarden.TestClient) for the full login + vault sync + decrypt flow (equivalent to `bw login` + `bw list items`).
 
 ## Regeneration
 
