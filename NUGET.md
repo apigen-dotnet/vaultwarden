@@ -46,6 +46,10 @@ httpClient.DefaultRequestHeaders.Authorization =
 var sync = await client.Sync.SyncGetAsync(new SyncGetRequest());
 ```
 
+## Example
+
+For a complete working example (login, vault sync, item decryption), see the [TestClient on GitHub](https://github.com/apigen-dotnet/vaultwarden/tree/main/examples/Apigen.Vaultwarden.TestClient).
+
 ## License
 
 MIT
