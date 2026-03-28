@@ -19,4 +19,8 @@
     <PackageTags>vaultwarden;bitwarden;api;client;openapi</PackageTags>
     <PackageReadmeFile>NUGET.md</PackageReadmeFile>
   </PropertyGroup>
+
+  <ItemGroup Condition="'$(MSBuildProjectName)' == 'Apigen.Vaultwarden.Client'">
+    <None Include="../../NUGET.md" Pack="true" PackagePath="/" />
+  </ItemGroup>
 </Project>
