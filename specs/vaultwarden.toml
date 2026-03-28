@@ -1,0 +1,66 @@
+output_path = "src"
+target_framework = "net10.0"
+generate_nullable_reference_types = true
+generate_data_annotations = true
+
+[[specs]]
+path = "specs/vaultwarden-identity.json"
+path_prefix = "/identity"
+
+[[specs]]
+path = "specs/vaultwarden-vault.json"
+path_prefix = "/api"
+
+[[specs]]
+path = "specs/vaultwarden-public.json"
+path_prefix = ""
+
+[models]
+namespace = "Apigen.Vaultwarden.Models"
+project_name = "Apigen.Vaultwarden.Models"
+
+[model_generation]
+strategy = "SeparateWithDeduplication"
+request_suffix = "Request"
+response_suffix = ""
+generate_to_request_extensions = true
+
+[enum_generation]
+generation_mode = "Smart"
+unknown_value_handling = "Throw"
+add_json_string_enum_converter = false
+
+[serialization]
+nullable_for_optional_properties = true
+ignore_condition = "WhenWritingNull"
+
+[client]
+generate_client = true
+namespace = "Apigen.Vaultwarden.Client"
+project_name = "Apigen.Vaultwarden.Client"
+client_class_name = "VaultwardenApiClient"
+use_async_suffix = true
+generate_interfaces = true
+use_ilogger = true
+
+[client.request_organization]
+strategy = "individual_files"
+directory = "Requests"
+include_base_classes = true
+
+[client.authentication]
+token_header = ""
+required_headers = []
+
+[naming]
+
+[formatting]
+use_spaces = true
+indent_width = 2
+
+[header]
+include_header = true
+include_timestamp = false
+include_source = true
+include_generator_info = true
+custom_text = ""

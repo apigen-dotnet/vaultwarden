@@ -1,0 +1,22 @@
+<Project>
+  <PropertyGroup>
+    <Authors>Frank Hommers</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/apigen-dotnet/vaultwarden</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+  <!-- Models project: not packable, bundled inside Client package -->
+  <PropertyGroup Condition="'$(MSBuildProjectName)' == 'Apigen.Vaultwarden.Models'">
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <!-- Client project: the NuGet package -->
+  <PropertyGroup Condition="'$(MSBuildProjectName)' == 'Apigen.Vaultwarden.Client'">
+    <PackageId>Apigen.Vaultwarden</PackageId>
+    <Version>0.1.0</Version>
+    <Description>Auto-generated .NET client for Vaultwarden API</Description>
+    <PackageTags>vaultwarden;bitwarden;api;client;openapi</PackageTags>
+    <PackageReadmeFile>NUGET.md</PackageReadmeFile>
+  </PropertyGroup>
+</Project>

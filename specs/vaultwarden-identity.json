@@ -1,0 +1,599 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "Vaultwarden Identity 1.35.4 (API 2025.12.0)",
+    "version": "1.35.4"
+  },
+  "paths": {
+    "/accounts/register/send-verification-email": {
+      "post": {
+        "tags": [
+          "Accounts"
+        ],
+        "operationId": "Accounts_PostRegisterSendVerificationEmail",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterSendVerificationEmailRequestModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterSendVerificationEmailRequestModel"
+              }
+            },
+            "application/*\u002Bjson": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterSendVerificationEmailRequestModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "x-action-name": "PostRegisterSendVerificationEmail",
+        "x-action-name-snake-case": "post_register_send_verification_email",
+        "x-source-file": "src/Identity/Controllers/AccountsController.cs",
+        "x-source-line": 113
+      }
+    },
+    "/accounts/register/finish": {
+      "post": {
+        "tags": [
+          "Accounts"
+        ],
+        "operationId": "Accounts_PostRegisterFinish",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterFinishRequestModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterFinishRequestModel"
+              }
+            },
+            "application/*\u002Bjson": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterFinishRequestModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/RegisterFinishResponseModel"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RegisterFinishResponseModel"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RegisterFinishResponseModel"
+                }
+              }
+            }
+          }
+        },
+        "x-action-name": "PostRegisterFinish",
+        "x-action-name-snake-case": "post_register_finish",
+        "x-source-file": "src/Identity/Controllers/AccountsController.cs",
+        "x-source-line": 148
+      }
+    },
+    "/accounts/prelogin": {
+      "post": {
+        "tags": [
+          "Accounts"
+        ],
+        "operationId": "Accounts_PostPrelogin",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PasswordPreloginRequestModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PasswordPreloginRequestModel"
+              }
+            },
+            "application/*\u002Bjson": {
+              "schema": {
+                "$ref": "#/components/schemas/PasswordPreloginRequestModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/PasswordPreloginResponseModel"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PasswordPreloginResponseModel"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PasswordPreloginResponseModel"
+                }
+              }
+            }
+          }
+        },
+        "deprecated": true,
+        "x-action-name": "PostPrelogin",
+        "x-action-name-snake-case": "post_prelogin",
+        "x-source-file": "src/Identity/Controllers/AccountsController.cs",
+        "x-source-line": 209
+      }
+    },
+    "/connect/token": {
+      "post": {
+        "tags": [
+          "Connect"
+        ],
+        "summary": "Exchange credentials for an access token (OAuth2 password or client_credentials grant)",
+        "operationId": "Connect_Token",
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "required": [
+                  "grant_type",
+                  "client_id"
+                ],
+                "type": "object",
+                "properties": {
+                  "grant_type": {
+                    "enum": [
+                      "password",
+                      "client_credentials"
+                    ],
+                    "type": "string",
+                    "description": "OAuth2 grant type: \u0027password\u0027 or \u0027client_credentials\u0027"
+                  },
+                  "username": {
+                    "type": "string",
+                    "description": "Email address (for password grant)"
+                  },
+                  "password": {
+                    "type": "string",
+                    "description": "Base64-encoded master password hash (for password grant)"
+                  },
+                  "scope": {
+                    "type": "string",
+                    "description": "Requested scopes, e.g. \u0027api offline_access\u0027"
+                  },
+                  "client_id": {
+                    "type": "string",
+                    "description": "Client identifier: \u0027cli\u0027, \u0027web\u0027, \u0027browser\u0027, \u0027desktop\u0027, \u0027mobile\u0027, or an API key client_id"
+                  },
+                  "client_secret": {
+                    "type": "string",
+                    "description": "Client secret (for client_credentials grant with API key)"
+                  },
+                  "deviceType": {
+                    "type": "integer",
+                    "description": "Device type enum: 9=CLI, 6=WindowsDesktop, 7=MacOsDesktop, etc.",
+                    "format": "int32"
+                  },
+                  "deviceIdentifier": {
+                    "type": "string",
+                    "description": "Unique device GUID"
+                  },
+                  "deviceName": {
+                    "type": "string",
+                    "description": "Device name string, e.g. \u0027cli\u0027"
+                  },
+                  "devicePushToken": {
+                    "type": "string",
+                    "description": "Push notification token (empty for CLI)"
+                  },
+                  "twoFactorToken": {
+                    "type": "string",
+                    "description": "2FA code (TOTP, YubiKey, etc.)"
+                  },
+                  "twoFactorProvider": {
+                    "type": "integer",
+                    "description": "2FA provider: 0=Authenticator, 1=Email, 2=Duo, 3=YubiKey, 5=Remember, 7=WebAuthn",
+                    "format": "int32"
+                  },
+                  "twoFactorRemember": {
+                    "type": "integer",
+                    "description": "Set to 1 to remember this device for 2FA",
+                    "format": "int32"
+                  }
+                }
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful authentication",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TokenResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Authentication failed (invalid credentials, 2FA required, etc.)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TokenErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "KdfSettings": {
+        "required": [
+          "iterations",
+          "kdfType"
+        ],
+        "type": "object",
+        "properties": {
+          "kdfType": {
+            "$ref": "#/components/schemas/KdfType"
+          },
+          "iterations": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "memory": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "parallelism": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "KdfType": {
+        "enum": [
+          0,
+          1
+        ],
+        "type": "integer",
+        "format": "int32",
+        "x-enum-varnames": [
+          "PBKDF2_SHA256",
+          "Argon2id"
+        ]
+      },
+      "KeysRequestModel": {
+        "required": [
+          "encryptedPrivateKey",
+          "publicKey"
+        ],
+        "type": "object",
+        "properties": {
+          "publicKey": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "encryptedPrivateKey": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "PasswordPreloginRequestModel": {
+        "required": [
+          "email"
+        ],
+        "type": "object",
+        "properties": {
+          "email": {
+            "maxLength": 256,
+            "minLength": 0,
+            "type": "string",
+            "format": "email"
+          }
+        },
+        "additionalProperties": false
+      },
+      "PasswordPreloginResponseModel": {
+        "type": "object",
+        "properties": {
+          "kdf": {
+            "$ref": "#/components/schemas/KdfType"
+          },
+          "kdfIterations": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "kdfMemory": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "kdfParallelism": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "kdfSettings": {
+            "$ref": "#/components/schemas/KdfSettings"
+          },
+          "salt": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RegisterFinishRequestModel": {
+        "required": [
+          "email",
+          "kdf",
+          "kdfIterations",
+          "masterPasswordHash",
+          "userAsymmetricKeys",
+          "userSymmetricKey"
+        ],
+        "type": "object",
+        "properties": {
+          "email": {
+            "maxLength": 256,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "emailVerificationToken": {
+            "type": "string",
+            "nullable": true
+          },
+          "masterPasswordHash": {
+            "maxLength": 1000,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "masterPasswordHint": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "userSymmetricKey": {
+            "type": "string",
+            "nullable": true
+          },
+          "userAsymmetricKeys": {
+            "$ref": "#/components/schemas/KeysRequestModel"
+          },
+          "kdf": {
+            "$ref": "#/components/schemas/KdfType"
+          },
+          "kdfIterations": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "kdfMemory": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "kdfParallelism": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "organizationUserId": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "orgInviteToken": {
+            "type": "string",
+            "nullable": true
+          },
+          "orgSponsoredFreeFamilyPlanToken": {
+            "type": "string",
+            "nullable": true
+          },
+          "acceptEmergencyAccessInviteToken": {
+            "type": "string",
+            "nullable": true
+          },
+          "acceptEmergencyAccessId": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "providerInviteToken": {
+            "type": "string",
+            "nullable": true
+          },
+          "providerUserId": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RegisterFinishResponseModel": {
+        "type": "object",
+        "properties": {
+          "object": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "captchaBypassToken": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RegisterSendVerificationEmailRequestModel": {
+        "required": [
+          "email"
+        ],
+        "type": "object",
+        "properties": {
+          "name": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "maxLength": 256,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "receiveMarketingEmails": {
+            "type": "boolean"
+          },
+          "fromMarketing": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TokenResponse": {
+        "type": "object",
+        "properties": {
+          "access_token": {
+            "type": "string"
+          },
+          "expires_in": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "token_type": {
+            "type": "string"
+          },
+          "refresh_token": {
+            "type": "string",
+            "nullable": true
+          },
+          "scope": {
+            "type": "string"
+          },
+          "PrivateKey": {
+            "type": "string",
+            "description": "RSA private key encrypted with the user symmetric key",
+            "nullable": true
+          },
+          "Key": {
+            "type": "string",
+            "description": "Protected symmetric key encrypted with the stretched master key",
+            "nullable": true
+          },
+          "Kdf": {
+            "type": "integer",
+            "description": "KDF type: 0=PBKDF2_SHA256, 1=Argon2id",
+            "format": "int32"
+          },
+          "KdfIterations": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "KdfMemory": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "KdfParallelism": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "ForcePasswordReset": {
+            "type": "boolean"
+          },
+          "ResetMasterPassword": {
+            "type": "boolean"
+          },
+          "MasterPasswordPolicy": {
+            "type": "object",
+            "nullable": true
+          },
+          "UserDecryptionOptions": {
+            "type": "object",
+            "nullable": true
+          }
+        }
+      },
+      "TokenErrorResponse": {
+        "type": "object",
+        "properties": {
+          "error": {
+            "type": "string"
+          },
+          "error_description": {
+            "type": "string",
+            "nullable": true
+          },
+          "TwoFactorProviders": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "description": "Available 2FA provider types when 2FA is required",
+            "nullable": true
+          },
+          "TwoFactorProviders2": {
+            "type": "object",
+            "description": "Detailed 2FA provider info keyed by provider type",
+            "nullable": true
+          },
+          "SsoEmail2faSessionToken": {
+            "type": "string",
+            "nullable": true
+          },
+          "MasterPasswordPolicy": {
+            "type": "object",
+            "nullable": true
+          }
+        }
+      }
+    }
+  },
+  "x-git-commit": "a003ad63d2a70f232ff1b50e013833937e849af8"
+}

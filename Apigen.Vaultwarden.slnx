@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="src/Apigen.Vaultwarden.Models/Apigen.Vaultwarden.Models.csproj" />
+  <Project Path="src/Apigen.Vaultwarden.Client/Apigen.Vaultwarden.Client.csproj" />
+</Solution>

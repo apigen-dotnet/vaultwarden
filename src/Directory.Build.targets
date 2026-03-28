@@ -1,0 +1,11 @@
+<Project>
+  <PropertyGroup Condition="'$(MSBuildProjectName)' == 'Apigen.Vaultwarden.Client'">
+    <TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);IncludeModelsInPackage</TargetsForTfmSpecificBuildOutput>
+  </PropertyGroup>
+
+  <Target Name="IncludeModelsInPackage">
+    <ItemGroup>
+      <BuildOutputInPackage Include="$(OutputPath)Apigen.Vaultwarden.Models.dll" />
+    </ItemGroup>
+  </Target>
+</Project>
