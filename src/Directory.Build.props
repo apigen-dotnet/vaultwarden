@@ -13,8 +13,8 @@
 
   <!-- Client project: the NuGet package -->
   <PropertyGroup Condition="'$(MSBuildProjectName)' == 'Apigen.Vaultwarden.Client'">
-    <PackageId>Apigen.Vaultwarden</PackageId>
-    <Version>1.35.0</Version>
+    <PackageId>Apigen.Vaultwarden.Client</PackageId>
+    <Version>1.35.1</Version>
     <Description>Auto-generated .NET client for Vaultwarden API</Description>
     <PackageTags>vaultwarden;bitwarden;api;client;openapi</PackageTags>
     <PackageReadmeFile>NUGET.md</PackageReadmeFile>
