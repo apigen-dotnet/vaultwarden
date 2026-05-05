@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// RotateUserAccountKeysAndDataRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/RotateUserAccountKeysAndDataRequestModel
 /// </summary>
-public class RotateUserAccountKeysAndDataRequestModel
+public partial class RotateUserAccountKeysAndDataRequestModel
 {
   [Required]
   [MinLength(0)]

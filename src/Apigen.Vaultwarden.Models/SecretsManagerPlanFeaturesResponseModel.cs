@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// SecretsManagerPlanFeaturesResponseModel from OpenAPI schema.
 /// Schema path: #/components/schemas/SecretsManagerPlanFeaturesResponseModel
 /// </summary>
-public class SecretsManagerPlanFeaturesResponseModel
+public partial class SecretsManagerPlanFeaturesResponseModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("maxServiceAccounts")]
   public int? MaxServiceAccounts { get; set; }

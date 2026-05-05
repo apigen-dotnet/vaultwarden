@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// OrganizationUserUpdateRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/OrganizationUserUpdateRequestModel
 /// </summary>
-public class OrganizationUserUpdateRequestModel
+public partial class OrganizationUserUpdateRequestModel
 {
   [Required]
   [System.Text.Json.Serialization.JsonPropertyName("type")]

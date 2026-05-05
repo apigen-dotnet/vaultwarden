@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// TwoFactorYubiKeyResponseModel from OpenAPI schema.
 /// Schema path: #/components/schemas/TwoFactorYubiKeyResponseModel
 /// </summary>
-public class TwoFactorYubiKeyResponseModel
+public partial class TwoFactorYubiKeyResponseModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("object")]
   public string? Object { get; set; }

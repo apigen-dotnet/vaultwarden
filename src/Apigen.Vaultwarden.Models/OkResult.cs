@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// OkResult from OpenAPI schema.
 /// Schema path: #/components/schemas/OkResult
 /// </summary>
-public class OkResult
+public partial class OkResult
 {
   [System.Text.Json.Serialization.JsonPropertyName("statusCode")]
   public int? StatusCode { get; set; }

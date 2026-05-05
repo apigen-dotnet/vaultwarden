@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// OrganizationUserAcceptRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/OrganizationUserAcceptRequestModel
 /// </summary>
-public class OrganizationUserAcceptRequestModel
+public partial class OrganizationUserAcceptRequestModel
 {
   [Required]
   [MinLength(1)]

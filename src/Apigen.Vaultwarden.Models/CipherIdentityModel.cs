@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// CipherIdentityModel from OpenAPI schema.
 /// Schema path: #/components/schemas/CipherIdentityModel
 /// </summary>
-public class CipherIdentityModel
+public partial class CipherIdentityModel
 {
   [MinLength(0)]
   [MaxLength(1000)]

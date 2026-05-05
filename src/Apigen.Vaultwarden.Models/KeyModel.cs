@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// KeyModel from OpenAPI schema.
 /// Schema path: #/components/schemas/KeyModel
 /// </summary>
-public class KeyModel
+public partial class KeyModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("name")]
   public string? Name { get; set; }

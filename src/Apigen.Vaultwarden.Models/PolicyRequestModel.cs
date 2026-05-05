@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// PolicyRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/PolicyRequestModel
 /// </summary>
-public class PolicyRequestModel
+public partial class PolicyRequestModel
 {
   [Required]
   [System.Text.Json.Serialization.JsonPropertyName("enabled")]

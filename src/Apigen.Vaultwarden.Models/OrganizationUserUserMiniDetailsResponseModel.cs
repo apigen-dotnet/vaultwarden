@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// OrganizationUserUserMiniDetailsResponseModel from OpenAPI schema.
 /// Schema path: #/components/schemas/OrganizationUserUserMiniDetailsResponseModel
 /// </summary>
-public class OrganizationUserUserMiniDetailsResponseModel
+public partial class OrganizationUserUserMiniDetailsResponseModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("object")]
   public string? Object { get; set; }

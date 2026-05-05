@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// SignatureKeyPairResponseModel from OpenAPI schema.
 /// Schema path: #/components/schemas/SignatureKeyPairResponseModel
 /// </summary>
-public class SignatureKeyPairResponseModel
+public partial class SignatureKeyPairResponseModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("object")]
   public string? Object { get; set; }

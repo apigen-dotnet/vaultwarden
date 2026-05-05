@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// PasswordHintRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/PasswordHintRequestModel
 /// </summary>
-public class PasswordHintRequestModel
+public partial class PasswordHintRequestModel
 {
   [Required]
   [MinLength(0)]

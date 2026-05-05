@@ -9,7 +9,7 @@ namespace Apigen.Vaultwarden.Client;
 /// <summary>
 /// Interface for Events operations
 /// </summary>
-public interface IEventsClient
+public partial interface IEventsClient
 {
   /// <summary>
   /// 

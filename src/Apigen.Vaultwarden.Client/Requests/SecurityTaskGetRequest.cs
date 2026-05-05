@@ -11,7 +11,7 @@ namespace Apigen.Vaultwarden.Client;
 /// Request parameters for Retrieves security tasks for the current user.
 /// Operation: GET /api/tasks
 /// </summary>
-public class SecurityTaskGetRequest : BaseRequest
+public partial class SecurityTaskGetRequest : BaseRequest
 {
   /// <summary>
   /// Optional filter for task status. If not provided returns tasks of all statuses.

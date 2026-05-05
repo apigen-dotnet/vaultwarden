@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// ImportCiphersRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/ImportCiphersRequestModel
 /// </summary>
-public class ImportCiphersRequestModel
+public partial class ImportCiphersRequestModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("folders")]
   public List<FolderWithIdRequestModel>? Folders { get; set; }

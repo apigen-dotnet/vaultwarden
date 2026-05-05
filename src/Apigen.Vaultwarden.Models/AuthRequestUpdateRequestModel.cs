@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// AuthRequestUpdateRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/AuthRequestUpdateRequestModel
 /// </summary>
-public class AuthRequestUpdateRequestModel
+public partial class AuthRequestUpdateRequestModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("key")]
   public string? Key { get; set; }

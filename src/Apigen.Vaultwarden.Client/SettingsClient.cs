@@ -14,7 +14,7 @@ namespace Apigen.Vaultwarden.Client;
 /// <summary>
 /// Client for Settings operations
 /// </summary>
-public class SettingsClient
+public partial class SettingsClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

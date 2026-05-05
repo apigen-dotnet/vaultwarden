@@ -23,7 +23,7 @@ namespace Apigen.Vaultwarden.Models;
 /// 
 /// Response model for a collection that is always assigned to the requesting user, including permissions.
 /// </summary>
-public class CollectionDetailsResponseModel
+public partial class CollectionDetailsResponseModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("object")]
   public string? Object { get; set; }

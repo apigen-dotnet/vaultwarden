@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// OrganizationImportGroupRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/OrganizationImportGroupRequestModel
 /// </summary>
-public class OrganizationImportGroupRequestModel
+public partial class OrganizationImportGroupRequestModel
 {
   /// <summary>
   /// The name of the group.

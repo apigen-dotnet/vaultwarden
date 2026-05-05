@@ -14,7 +14,7 @@ namespace Apigen.Vaultwarden.Client;
 /// <summary>
 /// Client for Sync operations
 /// </summary>
-public class SyncClient
+public partial class SyncClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

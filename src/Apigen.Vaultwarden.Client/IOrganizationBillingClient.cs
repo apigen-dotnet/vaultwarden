@@ -9,7 +9,7 @@ namespace Apigen.Vaultwarden.Client;
 /// <summary>
 /// Interface for OrganizationBilling operations
 /// </summary>
-public interface IOrganizationBillingClient
+public partial interface IOrganizationBillingClient
 {
   /// <summary>
   /// 

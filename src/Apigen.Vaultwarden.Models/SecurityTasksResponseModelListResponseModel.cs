@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// SecurityTasksResponseModelListResponseModel from OpenAPI schema.
 /// Schema path: #/components/schemas/SecurityTasksResponseModelListResponseModel
 /// </summary>
-public class SecurityTasksResponseModelListResponseModel
+public partial class SecurityTasksResponseModelListResponseModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("object")]
   public string? Object { get; set; }

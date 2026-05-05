@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// Permissions from OpenAPI schema.
 /// Schema path: #/components/schemas/Permissions
 /// </summary>
-public class Permissions
+public partial class Permissions
 {
   [System.Text.Json.Serialization.JsonPropertyName("accessEventLogs")]
   public bool? AccessEventLogs { get; set; }

@@ -9,7 +9,7 @@ namespace Apigen.Vaultwarden.Client;
 /// <summary>
 /// Interface for Info operations
 /// </summary>
-public interface IInfoClient
+public partial interface IInfoClient
 {
   /// <summary>
   /// 

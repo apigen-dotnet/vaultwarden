@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// RegisterSendVerificationEmailRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/RegisterSendVerificationEmailRequestModel
 /// </summary>
-public class RegisterSendVerificationEmailRequestModel
+public partial class RegisterSendVerificationEmailRequestModel
 {
   [MinLength(0)]
   [MaxLength(50)]

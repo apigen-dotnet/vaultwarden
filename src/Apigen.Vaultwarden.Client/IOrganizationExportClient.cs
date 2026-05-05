@@ -9,7 +9,7 @@ namespace Apigen.Vaultwarden.Client;
 /// <summary>
 /// Interface for OrganizationExport operations
 /// </summary>
-public interface IOrganizationExportClient
+public partial interface IOrganizationExportClient
 {
   /// <summary>
   /// 

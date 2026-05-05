@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// SendAccessRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/SendAccessRequestModel
 /// </summary>
-public class SendAccessRequestModel
+public partial class SendAccessRequestModel
 {
   [MinLength(0)]
   [MaxLength(300)]

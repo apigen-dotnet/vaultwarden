@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// SecretVerificationRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/SecretVerificationRequestModel
 /// </summary>
-public class SecretVerificationRequestModel
+public partial class SecretVerificationRequestModel
 {
   [MinLength(0)]
   [MaxLength(300)]

@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// PendingAuthRequestResponseModel from OpenAPI schema.
 /// Schema path: #/components/schemas/PendingAuthRequestResponseModel
 /// </summary>
-public class PendingAuthRequestResponseModel
+public partial class PendingAuthRequestResponseModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("object")]
   public string? Object { get; set; }

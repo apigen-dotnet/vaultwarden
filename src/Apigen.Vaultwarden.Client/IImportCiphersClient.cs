@@ -9,7 +9,7 @@ namespace Apigen.Vaultwarden.Client;
 /// <summary>
 /// Interface for ImportCiphers operations
 /// </summary>
-public interface IImportCiphersClient
+public partial interface IImportCiphersClient
 {
   /// <summary>
   /// 

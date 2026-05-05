@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// Cipher from OpenAPI schema.
 /// Schema path: #/components/schemas/Cipher
 /// </summary>
-public class Cipher
+public partial class Cipher
 {
   [System.Text.Json.Serialization.JsonPropertyName("id")]
   public Guid? Id { get; set; }

@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// PasswordManagerPlanFeaturesResponseModel from OpenAPI schema.
 /// Schema path: #/components/schemas/PasswordManagerPlanFeaturesResponseModel
 /// </summary>
-public class PasswordManagerPlanFeaturesResponseModel
+public partial class PasswordManagerPlanFeaturesResponseModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("stripePlanId")]
   public string? StripePlanId { get; set; }

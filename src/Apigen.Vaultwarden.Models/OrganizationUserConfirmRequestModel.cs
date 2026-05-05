@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// OrganizationUserConfirmRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/OrganizationUserConfirmRequestModel
 /// </summary>
-public class OrganizationUserConfirmRequestModel
+public partial class OrganizationUserConfirmRequestModel
 {
   [Required]
   [MinLength(1)]

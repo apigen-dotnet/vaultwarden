@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// TwoFactorDuoResponseModel from OpenAPI schema.
 /// Schema path: #/components/schemas/TwoFactorDuoResponseModel
 /// </summary>
-public class TwoFactorDuoResponseModel
+public partial class TwoFactorDuoResponseModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("object")]
   public string? Object { get; set; }

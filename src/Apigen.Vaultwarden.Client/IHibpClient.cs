@@ -9,7 +9,7 @@ namespace Apigen.Vaultwarden.Client;
 /// <summary>
 /// Interface for Hibp operations
 /// </summary>
-public interface IHibpClient
+public partial interface IHibpClient
 {
   /// <summary>
   /// 

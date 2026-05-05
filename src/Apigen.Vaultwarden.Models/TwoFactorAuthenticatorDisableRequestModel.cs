@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// TwoFactorAuthenticatorDisableRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/TwoFactorAuthenticatorDisableRequestModel
 /// </summary>
-public class TwoFactorAuthenticatorDisableRequestModel
+public partial class TwoFactorAuthenticatorDisableRequestModel
 {
   [MinLength(0)]
   [MaxLength(300)]

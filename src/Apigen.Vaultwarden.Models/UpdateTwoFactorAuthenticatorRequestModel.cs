@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// UpdateTwoFactorAuthenticatorRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/UpdateTwoFactorAuthenticatorRequestModel
 /// </summary>
-public class UpdateTwoFactorAuthenticatorRequestModel
+public partial class UpdateTwoFactorAuthenticatorRequestModel
 {
   [MinLength(0)]
   [MaxLength(300)]

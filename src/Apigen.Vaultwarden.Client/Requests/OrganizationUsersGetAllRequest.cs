@@ -11,7 +11,7 @@ namespace Apigen.Vaultwarden.Client;
 /// Request parameters for 
 /// Operation: GET /api/organizations/{orgId}/users
 /// </summary>
-public class OrganizationUsersGetAllRequest : BaseRequest
+public partial class OrganizationUsersGetAllRequest : BaseRequest
 {
   /// <summary>
   /// includeGroups

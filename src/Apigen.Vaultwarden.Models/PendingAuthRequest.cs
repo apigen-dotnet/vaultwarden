@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// PendingAuthRequest from OpenAPI schema.
 /// Schema path: #/components/schemas/PendingAuthRequest
 /// </summary>
-public class PendingAuthRequest
+public partial class PendingAuthRequest
 {
   [System.Text.Json.Serialization.JsonIgnore(Condition = System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull)]
   [System.Text.Json.Serialization.JsonPropertyName("id")]

@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// OrganizationUpdateRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/OrganizationUpdateRequestModel
 /// </summary>
-public class OrganizationUpdateRequestModel
+public partial class OrganizationUpdateRequestModel
 {
   [MinLength(0)]
   [MaxLength(50)]

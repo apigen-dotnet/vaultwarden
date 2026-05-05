@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// DeleteRecoverRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/DeleteRecoverRequestModel
 /// </summary>
-public class DeleteRecoverRequestModel
+public partial class DeleteRecoverRequestModel
 {
   [Required]
   [MinLength(0)]

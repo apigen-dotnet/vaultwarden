@@ -11,7 +11,7 @@ namespace Apigen.Vaultwarden.Client;
 /// Request parameters for 
 /// Operation: POST /api/ciphers/import-organization
 /// </summary>
-public class ImportCiphersPostImportOrganizationRequest : BaseRequest
+public partial class ImportCiphersPostImportOrganizationRequest : BaseRequest
 {
   /// <summary>
   /// organizationId

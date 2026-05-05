@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// MasterPasswordUnlockResponseModel from OpenAPI schema.
 /// Schema path: #/components/schemas/MasterPasswordUnlockResponseModel
 /// </summary>
-public class MasterPasswordUnlockResponseModel
+public partial class MasterPasswordUnlockResponseModel
 {
   [Required]
   [System.Text.Json.Serialization.JsonPropertyName("kdf")]

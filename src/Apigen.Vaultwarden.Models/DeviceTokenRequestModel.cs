@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// DeviceTokenRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/DeviceTokenRequestModel
 /// </summary>
-public class DeviceTokenRequestModel
+public partial class DeviceTokenRequestModel
 {
   [MinLength(0)]
   [MaxLength(255)]

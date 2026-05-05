@@ -9,7 +9,7 @@ namespace Apigen.Vaultwarden.Client;
 /// <summary>
 /// Interface for AccountsKeyManagement operations
 /// </summary>
-public interface IAccountsKeyManagementClient
+public partial interface IAccountsKeyManagementClient
 {
   /// <summary>
   /// 

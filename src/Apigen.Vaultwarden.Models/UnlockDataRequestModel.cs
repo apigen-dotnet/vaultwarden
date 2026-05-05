@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// UnlockDataRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/UnlockDataRequestModel
 /// </summary>
-public class UnlockDataRequestModel
+public partial class UnlockDataRequestModel
 {
   [Required]
   [System.Text.Json.Serialization.JsonPropertyName("masterPasswordUnlockData")]

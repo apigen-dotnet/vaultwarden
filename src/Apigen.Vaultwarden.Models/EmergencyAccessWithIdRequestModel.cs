@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// EmergencyAccessWithIdRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/EmergencyAccessWithIdRequestModel
 /// </summary>
-public class EmergencyAccessWithIdRequestModel
+public partial class EmergencyAccessWithIdRequestModel
 {
   [Required]
   [System.Text.Json.Serialization.JsonPropertyName("type")]

@@ -9,7 +9,7 @@ namespace Apigen.Vaultwarden.Client;
 /// <summary>
 /// Interface for Config operations
 /// </summary>
-public interface IConfigClient
+public partial interface IConfigClient
 {
   /// <summary>
   /// 

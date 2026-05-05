@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// CipherPartialRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/CipherPartialRequestModel
 /// </summary>
-public class CipherPartialRequestModel
+public partial class CipherPartialRequestModel
 {
   [MinLength(0)]
   [MaxLength(36)]

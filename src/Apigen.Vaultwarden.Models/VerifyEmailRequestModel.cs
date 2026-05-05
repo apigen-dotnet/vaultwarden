@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// VerifyEmailRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/VerifyEmailRequestModel
 /// </summary>
-public class VerifyEmailRequestModel
+public partial class VerifyEmailRequestModel
 {
   [Required]
   [MinLength(1)]

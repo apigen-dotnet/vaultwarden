@@ -14,7 +14,7 @@ namespace Apigen.Vaultwarden.Client;
 /// <summary>
 /// Client for EmergencyAccess operations
 /// </summary>
-public class EmergencyAccessClient
+public partial class EmergencyAccessClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

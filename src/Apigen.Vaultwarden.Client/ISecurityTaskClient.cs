@@ -9,7 +9,7 @@ namespace Apigen.Vaultwarden.Client;
 /// <summary>
 /// Interface for SecurityTask operations
 /// </summary>
-public interface ISecurityTaskClient
+public partial interface ISecurityTaskClient
 {
   /// <summary>
   /// Retrieves security tasks for the current user.

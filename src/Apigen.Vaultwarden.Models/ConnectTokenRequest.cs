@@ -18,10 +18,10 @@ using System.ComponentModel.DataAnnotations;
 namespace Apigen.Vaultwarden.Models;
 
 /// <summary>
-/// ConnectTokenRequest from OpenAPI schema.
-/// Schema path: #/components/schemas/ConnectTokenRequest
+/// ConnectTokenRequest (generated from inline request body).
+/// Source: POST /identity/connect/token (requestBody)
 /// </summary>
-public class ConnectTokenRequest
+public partial class ConnectTokenRequest
 {
   /// <summary>
   /// OAuth2 grant type: &apos;password&apos; or &apos;client_credentials&apos;

@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// TokenResponse from OpenAPI schema.
 /// Schema path: #/components/schemas/TokenResponse
 /// </summary>
-public class TokenResponse
+public partial class TokenResponse
 {
   [System.Text.Json.Serialization.JsonPropertyName("access_token")]
   public string? AccessToken { get; set; }

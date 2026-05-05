@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// UpdateCollectionRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/UpdateCollectionRequestModel
 /// </summary>
-public class UpdateCollectionRequestModel
+public partial class UpdateCollectionRequestModel
 {
   [MinLength(0)]
   [MaxLength(300)]

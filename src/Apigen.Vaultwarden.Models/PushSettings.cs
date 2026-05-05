@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// PushSettings from OpenAPI schema.
 /// Schema path: #/components/schemas/PushSettings
 /// </summary>
-public class PushSettings
+public partial class PushSettings
 {
   [System.Text.Json.Serialization.JsonPropertyName("pushTechnology")]
   public PushTechnologyType? PushTechnology { get; set; }

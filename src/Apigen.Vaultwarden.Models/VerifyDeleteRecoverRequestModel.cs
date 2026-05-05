@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// VerifyDeleteRecoverRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/VerifyDeleteRecoverRequestModel
 /// </summary>
-public class VerifyDeleteRecoverRequestModel
+public partial class VerifyDeleteRecoverRequestModel
 {
   [Required]
   [MinLength(1)]

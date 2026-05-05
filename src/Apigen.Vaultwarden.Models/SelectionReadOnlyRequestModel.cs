@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// SelectionReadOnlyRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/SelectionReadOnlyRequestModel
 /// </summary>
-public class SelectionReadOnlyRequestModel
+public partial class SelectionReadOnlyRequestModel
 {
   [Required]
   [System.Text.Json.Serialization.JsonPropertyName("id")]

@@ -9,7 +9,7 @@ namespace Apigen.Vaultwarden.Client;
 /// <summary>
 /// Interface for Policies operations
 /// </summary>
-public interface IPoliciesClient
+public partial interface IPoliciesClient
 {
   /// <summary>
   /// 

@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// AuthenticatorAttestationRawResponse from OpenAPI schema.
 /// Schema path: #/components/schemas/AuthenticatorAttestationRawResponse
 /// </summary>
-public class AuthenticatorAttestationRawResponse
+public partial class AuthenticatorAttestationRawResponse
 {
   [System.Text.Json.Serialization.JsonPropertyName("id")]
   public string? Id { get; set; }

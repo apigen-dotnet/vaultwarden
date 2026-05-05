@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// CollectionBulkDeleteRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/CollectionBulkDeleteRequestModel
 /// </summary>
-public class CollectionBulkDeleteRequestModel
+public partial class CollectionBulkDeleteRequestModel
 {
   [Required]
   [System.Text.Json.Serialization.JsonPropertyName("ids")]

@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// TwoFactorProviderRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/TwoFactorProviderRequestModel
 /// </summary>
-public class TwoFactorProviderRequestModel
+public partial class TwoFactorProviderRequestModel
 {
   [MinLength(0)]
   [MaxLength(300)]

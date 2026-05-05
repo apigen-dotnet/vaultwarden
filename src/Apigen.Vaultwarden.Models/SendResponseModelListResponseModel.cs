@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// SendResponseModelListResponseModel from OpenAPI schema.
 /// Schema path: #/components/schemas/SendResponseModelListResponseModel
 /// </summary>
-public class SendResponseModelListResponseModel
+public partial class SendResponseModelListResponseModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("object")]
   public string? Object { get; set; }

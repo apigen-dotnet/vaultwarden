@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// EmergencyAccessGranteeDetailsResponseModel from OpenAPI schema.
 /// Schema path: #/components/schemas/EmergencyAccessGranteeDetailsResponseModel
 /// </summary>
-public class EmergencyAccessGranteeDetailsResponseModel
+public partial class EmergencyAccessGranteeDetailsResponseModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("object")]
   public string? Object { get; set; }

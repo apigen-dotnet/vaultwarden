@@ -11,7 +11,7 @@ namespace Apigen.Vaultwarden.Client;
 /// Request parameters for 
 /// Operation: GET /api/organizations/{id}/events
 /// </summary>
-public class EventsGetOrganizationRequest : BaseRequest
+public partial class EventsGetOrganizationRequest : BaseRequest
 {
   /// <summary>
   /// start

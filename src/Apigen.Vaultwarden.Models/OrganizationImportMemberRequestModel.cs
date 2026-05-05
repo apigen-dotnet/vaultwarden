@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// OrganizationImportMemberRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/OrganizationImportMemberRequestModel
 /// </summary>
-public class OrganizationImportMemberRequestModel
+public partial class OrganizationImportMemberRequestModel
 {
   /// <summary>
   /// The member&apos;s email address. Required for non-deleted users.

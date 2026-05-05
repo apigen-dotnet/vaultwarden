@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// VerifiedOrganizationDomainSsoDetailsResponseModel from OpenAPI schema.
 /// Schema path: #/components/schemas/VerifiedOrganizationDomainSsoDetailsResponseModel
 /// </summary>
-public class VerifiedOrganizationDomainSsoDetailsResponseModel
+public partial class VerifiedOrganizationDomainSsoDetailsResponseModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("object")]
   public string? Object { get; set; }

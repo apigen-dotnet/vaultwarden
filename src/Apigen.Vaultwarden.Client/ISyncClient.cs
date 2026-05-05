@@ -9,7 +9,7 @@ namespace Apigen.Vaultwarden.Client;
 /// <summary>
 /// Interface for Sync operations
 /// </summary>
-public interface ISyncClient
+public partial interface ISyncClient
 {
   /// <summary>
   /// 

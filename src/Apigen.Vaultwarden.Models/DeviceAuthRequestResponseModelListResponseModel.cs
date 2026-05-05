@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// DeviceAuthRequestResponseModelListResponseModel from OpenAPI schema.
 /// Schema path: #/components/schemas/DeviceAuthRequestResponseModelListResponseModel
 /// </summary>
-public class DeviceAuthRequestResponseModelListResponseModel
+public partial class DeviceAuthRequestResponseModelListResponseModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("object")]
   public string? Object { get; set; }

@@ -9,7 +9,7 @@ namespace Apigen.Vaultwarden.Client;
 /// <summary>
 /// Interface for Folders operations
 /// </summary>
-public interface IFoldersClient
+public partial interface IFoldersClient
 {
   /// <summary>
   /// 

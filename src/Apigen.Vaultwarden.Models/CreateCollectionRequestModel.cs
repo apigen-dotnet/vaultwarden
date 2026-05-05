@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// CreateCollectionRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/CreateCollectionRequestModel
 /// </summary>
-public class CreateCollectionRequestModel
+public partial class CreateCollectionRequestModel
 {
   [Required]
   [MinLength(0)]

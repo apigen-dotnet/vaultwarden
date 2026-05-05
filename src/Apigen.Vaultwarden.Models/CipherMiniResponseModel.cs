@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// CipherMiniResponseModel from OpenAPI schema.
 /// Schema path: #/components/schemas/CipherMiniResponseModel
 /// </summary>
-public class CipherMiniResponseModel
+public partial class CipherMiniResponseModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("object")]
   public string? Object { get; set; }

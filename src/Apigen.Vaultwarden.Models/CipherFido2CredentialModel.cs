@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// CipherFido2CredentialModel from OpenAPI schema.
 /// Schema path: #/components/schemas/CipherFido2CredentialModel
 /// </summary>
-public class CipherFido2CredentialModel
+public partial class CipherFido2CredentialModel
 {
   [MinLength(0)]
   [MaxLength(1000)]

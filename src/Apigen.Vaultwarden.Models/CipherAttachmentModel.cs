@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// CipherAttachmentModel from OpenAPI schema.
 /// Schema path: #/components/schemas/CipherAttachmentModel
 /// </summary>
-public class CipherAttachmentModel
+public partial class CipherAttachmentModel
 {
   [MinLength(0)]
   [MaxLength(1000)]

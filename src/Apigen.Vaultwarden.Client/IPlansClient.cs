@@ -9,7 +9,7 @@ namespace Apigen.Vaultwarden.Client;
 /// <summary>
 /// Interface for Plans operations
 /// </summary>
-public interface IPlansClient
+public partial interface IPlansClient
 {
   /// <summary>
   /// 

@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// CollectionResponseModel from OpenAPI schema.
 /// Schema path: #/components/schemas/CollectionResponseModel
 /// </summary>
-public class CollectionResponseModel
+public partial class CollectionResponseModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("object")]
   public string? Object { get; set; }

@@ -9,7 +9,7 @@ namespace Apigen.Vaultwarden.Client;
 /// <summary>
 /// Interface for Collections operations
 /// </summary>
-public interface ICollectionsClient
+public partial interface ICollectionsClient
 {
   /// <summary>
   /// 

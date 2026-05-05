@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// UpdateProfileRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/UpdateProfileRequestModel
 /// </summary>
-public class UpdateProfileRequestModel
+public partial class UpdateProfileRequestModel
 {
   [MinLength(0)]
   [MaxLength(50)]

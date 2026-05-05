@@ -9,7 +9,7 @@ namespace Apigen.Vaultwarden.Client;
 /// <summary>
 /// Interface for WebAuthn operations
 /// </summary>
-public interface IWebAuthnClient
+public partial interface IWebAuthnClient
 {
   /// <summary>
   /// 

@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// CipherLoginModel from OpenAPI schema.
 /// Schema path: #/components/schemas/CipherLoginModel
 /// </summary>
-public class CipherLoginModel
+public partial class CipherLoginModel
 {
   [MinLength(0)]
   [MaxLength(10000)]

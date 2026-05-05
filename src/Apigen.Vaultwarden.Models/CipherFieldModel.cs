@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// CipherFieldModel from OpenAPI schema.
 /// Schema path: #/components/schemas/CipherFieldModel
 /// </summary>
-public class CipherFieldModel
+public partial class CipherFieldModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("type")]
   public FieldType? Type { get; set; }

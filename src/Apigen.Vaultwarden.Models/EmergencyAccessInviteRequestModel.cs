@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// EmergencyAccessInviteRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/EmergencyAccessInviteRequestModel
 /// </summary>
-public class EmergencyAccessInviteRequestModel
+public partial class EmergencyAccessInviteRequestModel
 {
   [Required]
   [MinLength(0)]

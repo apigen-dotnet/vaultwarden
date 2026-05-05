@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// ServerConfigResponseModel from OpenAPI schema.
 /// Schema path: #/components/schemas/ServerConfigResponseModel
 /// </summary>
-public class ServerConfigResponseModel
+public partial class ServerConfigResponseModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("name")]
   public string? Name { get; set; }

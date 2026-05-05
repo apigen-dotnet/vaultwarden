@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// OtherDeviceKeysUpdateRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/OtherDeviceKeysUpdateRequestModel
 /// </summary>
-public class OtherDeviceKeysUpdateRequestModel
+public partial class OtherDeviceKeysUpdateRequestModel
 {
   [Required]
   [MinLength(1)]

@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// UpdateAvatarRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/UpdateAvatarRequestModel
 /// </summary>
-public class UpdateAvatarRequestModel
+public partial class UpdateAvatarRequestModel
 {
   [MinLength(0)]
   [MaxLength(7)]

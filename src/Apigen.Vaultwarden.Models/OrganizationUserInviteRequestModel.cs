@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// OrganizationUserInviteRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/OrganizationUserInviteRequestModel
 /// </summary>
-public class OrganizationUserInviteRequestModel
+public partial class OrganizationUserInviteRequestModel
 {
   [Required]
   [System.Text.Json.Serialization.JsonPropertyName("emails")]

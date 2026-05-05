@@ -14,7 +14,7 @@ namespace Apigen.Vaultwarden.Client;
 /// <summary>
 /// Client for TwoFactor operations
 /// </summary>
-public class TwoFactorClient
+public partial class TwoFactorClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

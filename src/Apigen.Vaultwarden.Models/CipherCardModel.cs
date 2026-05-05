@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// CipherCardModel from OpenAPI schema.
 /// Schema path: #/components/schemas/CipherCardModel
 /// </summary>
-public class CipherCardModel
+public partial class CipherCardModel
 {
   [MinLength(0)]
   [MaxLength(1000)]

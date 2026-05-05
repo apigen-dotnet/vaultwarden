@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// UpdateDomainsRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/UpdateDomainsRequestModel
 /// </summary>
-public class UpdateDomainsRequestModel
+public partial class UpdateDomainsRequestModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("equivalentDomains")]
   public List<List<string?>?>? EquivalentDomains { get; set; }

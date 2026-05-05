@@ -14,7 +14,7 @@ namespace Apigen.Vaultwarden.Client;
 /// <summary>
 /// Client for Organization operations
 /// </summary>
-public class OrganizationClient
+public partial class OrganizationClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

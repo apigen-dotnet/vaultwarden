@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// CollectionWithIdRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/CollectionWithIdRequestModel
 /// </summary>
-public class CollectionWithIdRequestModel
+public partial class CollectionWithIdRequestModel
 {
   [Required]
   [MinLength(0)]

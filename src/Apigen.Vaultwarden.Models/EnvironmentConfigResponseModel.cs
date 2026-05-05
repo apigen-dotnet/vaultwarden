@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// EnvironmentConfigResponseModel from OpenAPI schema.
 /// Schema path: #/components/schemas/EnvironmentConfigResponseModel
 /// </summary>
-public class EnvironmentConfigResponseModel
+public partial class EnvironmentConfigResponseModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("cloudRegion")]
   public string? CloudRegion { get; set; }

@@ -9,7 +9,7 @@ namespace Apigen.Vaultwarden.Client;
 /// <summary>
 /// Interface for AuthRequests operations
 /// </summary>
-public interface IAuthRequestsClient
+public partial interface IAuthRequestsClient
 {
   /// <summary>
   /// 

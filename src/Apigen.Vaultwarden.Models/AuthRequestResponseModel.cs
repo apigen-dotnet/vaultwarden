@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// AuthRequestResponseModel from OpenAPI schema.
 /// Schema path: #/components/schemas/AuthRequestResponseModel
 /// </summary>
-public class AuthRequestResponseModel
+public partial class AuthRequestResponseModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("object")]
   public string? Object { get; set; }

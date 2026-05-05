@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// CipherCreateRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/CipherCreateRequestModel
 /// </summary>
-public class CipherCreateRequestModel
+public partial class CipherCreateRequestModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("collectionIds")]
   public List<Guid>? CollectionIds { get; set; }

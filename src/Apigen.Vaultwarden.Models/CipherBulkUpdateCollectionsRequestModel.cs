@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// CipherBulkUpdateCollectionsRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/CipherBulkUpdateCollectionsRequestModel
 /// </summary>
-public class CipherBulkUpdateCollectionsRequestModel
+public partial class CipherBulkUpdateCollectionsRequestModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("organizationId")]
   public Guid? OrganizationId { get; set; }

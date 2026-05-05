@@ -26,7 +26,7 @@ namespace Apigen.Vaultwarden.Models;
 /// (private key, signing key), and the public keys of the key pairs (unsigned public key,
 /// signed public key, verification key).
 /// </summary>
-public class PrivateKeysResponseModel
+public partial class PrivateKeysResponseModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("object")]
   public string? Object { get; set; }

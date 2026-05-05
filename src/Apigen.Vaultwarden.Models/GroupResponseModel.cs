@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// GroupResponseModel from OpenAPI schema.
 /// Schema path: #/components/schemas/GroupResponseModel
 /// </summary>
-public class GroupResponseModel
+public partial class GroupResponseModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("object")]
   public string? Object { get; set; }

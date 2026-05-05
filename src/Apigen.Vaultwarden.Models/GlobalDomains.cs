@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// GlobalDomains from OpenAPI schema.
 /// Schema path: #/components/schemas/GlobalDomains
 /// </summary>
-public class GlobalDomains
+public partial class GlobalDomains
 {
   [System.Text.Json.Serialization.JsonPropertyName("type")]
   public int? Type { get; set; }

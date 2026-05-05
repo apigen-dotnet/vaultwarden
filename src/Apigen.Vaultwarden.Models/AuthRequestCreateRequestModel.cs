@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// AuthRequestCreateRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/AuthRequestCreateRequestModel
 /// </summary>
-public class AuthRequestCreateRequestModel
+public partial class AuthRequestCreateRequestModel
 {
   [Required]
   [MinLength(1)]

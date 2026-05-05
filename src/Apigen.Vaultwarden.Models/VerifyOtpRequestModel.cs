@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// VerifyOTPRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/VerifyOTPRequestModel
 /// </summary>
-public class VerifyOtpRequestModel
+public partial class VerifyOtpRequestModel
 {
   [Required]
   [MinLength(1)]

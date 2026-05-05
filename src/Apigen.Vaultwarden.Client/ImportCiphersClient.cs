@@ -14,7 +14,7 @@ namespace Apigen.Vaultwarden.Client;
 /// <summary>
 /// Client for ImportCiphers operations
 /// </summary>
-public class ImportCiphersClient
+public partial class ImportCiphersClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

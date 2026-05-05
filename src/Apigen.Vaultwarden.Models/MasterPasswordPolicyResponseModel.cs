@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// MasterPasswordPolicyResponseModel from OpenAPI schema.
 /// Schema path: #/components/schemas/MasterPasswordPolicyResponseModel
 /// </summary>
-public class MasterPasswordPolicyResponseModel
+public partial class MasterPasswordPolicyResponseModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("object")]
   public string? Object { get; set; }

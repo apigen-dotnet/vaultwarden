@@ -14,7 +14,7 @@ namespace Apigen.Vaultwarden.Client;
 /// <summary>
 /// Client for Hibp operations
 /// </summary>
-public class HibpClient
+public partial class HibpClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

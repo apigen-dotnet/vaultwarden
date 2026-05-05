@@ -9,7 +9,7 @@ namespace Apigen.Vaultwarden.Client;
 /// <summary>
 /// Interface for TwoFactor operations
 /// </summary>
-public interface ITwoFactorClient
+public partial interface ITwoFactorClient
 {
   /// <summary>
   /// 

@@ -14,7 +14,7 @@ namespace Apigen.Vaultwarden.Client;
 /// <summary>
 /// Client for Groups operations
 /// </summary>
-public class GroupsClient
+public partial class GroupsClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

@@ -11,7 +11,7 @@ namespace Apigen.Vaultwarden.Client;
 /// Request parameters for 
 /// Operation: POST /api/ciphers/purge
 /// </summary>
-public class CiphersPostPurgeRequest : BaseRequest
+public partial class CiphersPostPurgeRequest : BaseRequest
 {
   /// <summary>
   /// organizationId

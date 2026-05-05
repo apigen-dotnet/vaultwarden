@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// PublicKeyEncryptionKeyPairResponseModel from OpenAPI schema.
 /// Schema path: #/components/schemas/PublicKeyEncryptionKeyPairResponseModel
 /// </summary>
-public class PublicKeyEncryptionKeyPairResponseModel
+public partial class PublicKeyEncryptionKeyPairResponseModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("object")]
   public string? Object { get; set; }

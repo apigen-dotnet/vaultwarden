@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// CipherSSHKeyModel from OpenAPI schema.
 /// Schema path: #/components/schemas/CipherSSHKeyModel
 /// </summary>
-public class CipherSshKeyModel
+public partial class CipherSshKeyModel
 {
   [MinLength(0)]
   [MaxLength(5000)]

@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// SavePolicyRequest from OpenAPI schema.
 /// Schema path: #/components/schemas/SavePolicyRequest
 /// </summary>
-public class SavePolicyRequest
+public partial class SavePolicyRequest
 {
   [Required]
   [System.Text.Json.Serialization.JsonPropertyName("policy")]

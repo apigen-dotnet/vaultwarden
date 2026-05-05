@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// OrganizationApiKeyRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/OrganizationApiKeyRequestModel
 /// </summary>
-public class OrganizationApiKeyRequestModel
+public partial class OrganizationApiKeyRequestModel
 {
   [MinLength(0)]
   [MaxLength(300)]

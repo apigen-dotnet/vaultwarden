@@ -11,7 +11,7 @@ namespace Apigen.Vaultwarden.Client;
 /// Request parameters for 
 /// Operation: GET /api/auth-requests/{id}/response
 /// </summary>
-public class AuthRequestsGetResponseRequest : BaseRequest
+public partial class AuthRequestsGetResponseRequest : BaseRequest
 {
   /// <summary>
   /// code

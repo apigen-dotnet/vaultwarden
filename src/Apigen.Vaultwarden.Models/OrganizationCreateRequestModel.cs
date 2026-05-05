@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// OrganizationCreateRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/OrganizationCreateRequestModel
 /// </summary>
-public class OrganizationCreateRequestModel
+public partial class OrganizationCreateRequestModel
 {
   [Required]
   [MinLength(0)]

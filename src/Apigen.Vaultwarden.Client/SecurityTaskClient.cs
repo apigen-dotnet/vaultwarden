@@ -14,7 +14,7 @@ namespace Apigen.Vaultwarden.Client;
 /// <summary>
 /// Client for SecurityTask operations
 /// </summary>
-public class SecurityTaskClient
+public partial class SecurityTaskClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

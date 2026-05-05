@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// ResponseData from OpenAPI schema.
 /// Schema path: #/components/schemas/ResponseData
 /// </summary>
-public class ResponseData
+public partial class ResponseData
 {
   [System.Text.Json.Serialization.JsonPropertyName("attestationObject")]
   public string? AttestationObject { get; set; }

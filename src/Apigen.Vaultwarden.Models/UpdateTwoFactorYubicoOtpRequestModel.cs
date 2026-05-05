@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// UpdateTwoFactorYubicoOtpRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/UpdateTwoFactorYubicoOtpRequestModel
 /// </summary>
-public class UpdateTwoFactorYubicoOtpRequestModel
+public partial class UpdateTwoFactorYubicoOtpRequestModel
 {
   [MinLength(0)]
   [MaxLength(300)]

@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// EventResponseModel from OpenAPI schema.
 /// Schema path: #/components/schemas/EventResponseModel
 /// </summary>
-public class EventResponseModel
+public partial class EventResponseModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("object")]
   public string? Object { get; set; }

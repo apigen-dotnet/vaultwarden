@@ -14,7 +14,7 @@ namespace Apigen.Vaultwarden.Client;
 /// <summary>
 /// Client for Policies operations
 /// </summary>
-public class PoliciesClient
+public partial class PoliciesClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

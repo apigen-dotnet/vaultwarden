@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// PasswordRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/PasswordRequestModel
 /// </summary>
-public class PasswordRequestModel
+public partial class PasswordRequestModel
 {
   [MinLength(0)]
   [MaxLength(300)]

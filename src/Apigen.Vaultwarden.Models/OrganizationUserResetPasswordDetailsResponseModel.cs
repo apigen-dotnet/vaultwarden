@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// OrganizationUserResetPasswordDetailsResponseModel from OpenAPI schema.
 /// Schema path: #/components/schemas/OrganizationUserResetPasswordDetailsResponseModel
 /// </summary>
-public class OrganizationUserResetPasswordDetailsResponseModel
+public partial class OrganizationUserResetPasswordDetailsResponseModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("object")]
   public string? Object { get; set; }

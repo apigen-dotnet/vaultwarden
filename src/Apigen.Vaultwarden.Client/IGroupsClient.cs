@@ -9,7 +9,7 @@ namespace Apigen.Vaultwarden.Client;
 /// <summary>
 /// Interface for Groups operations
 /// </summary>
-public interface IGroupsClient
+public partial interface IGroupsClient
 {
   /// <summary>
   /// 

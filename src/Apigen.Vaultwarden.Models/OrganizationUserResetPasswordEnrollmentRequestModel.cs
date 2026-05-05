@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// OrganizationUserResetPasswordEnrollmentRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/OrganizationUserResetPasswordEnrollmentRequestModel
 /// </summary>
-public class OrganizationUserResetPasswordEnrollmentRequestModel
+public partial class OrganizationUserResetPasswordEnrollmentRequestModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("resetPasswordKey")]
   public string? ResetPasswordKey { get; set; }

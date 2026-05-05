@@ -14,7 +14,7 @@ namespace Apigen.Vaultwarden.Client;
 /// <summary>
 /// Client for WebAuthn operations
 /// </summary>
-public class WebAuthnClient
+public partial class WebAuthnClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

@@ -14,7 +14,7 @@ namespace Apigen.Vaultwarden.Client;
 /// <summary>
 /// Client for Devices operations
 /// </summary>
-public class DevicesClient
+public partial class DevicesClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

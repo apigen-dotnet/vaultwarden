@@ -11,7 +11,7 @@ namespace Apigen.Vaultwarden.Client;
 /// Request parameters for 
 /// Operation: GET /api/settings/domains
 /// </summary>
-public class SettingsGetDomainsRequest : BaseRequest
+public partial class SettingsGetDomainsRequest : BaseRequest
 {
   /// <summary>
   /// excluded

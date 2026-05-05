@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// RegisterFinishResponseModel from OpenAPI schema.
 /// Schema path: #/components/schemas/RegisterFinishResponseModel
 /// </summary>
-public class RegisterFinishResponseModel
+public partial class RegisterFinishResponseModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("object")]
   public string? Object { get; set; }

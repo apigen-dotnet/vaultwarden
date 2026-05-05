@@ -9,7 +9,7 @@ namespace Apigen.Vaultwarden.Client;
 /// <summary>
 /// Interface for Devices operations
 /// </summary>
-public interface IDevicesClient
+public partial interface IDevicesClient
 {
   /// <summary>
   /// 

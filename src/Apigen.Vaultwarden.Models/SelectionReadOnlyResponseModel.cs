@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// SelectionReadOnlyResponseModel from OpenAPI schema.
 /// Schema path: #/components/schemas/SelectionReadOnlyResponseModel
 /// </summary>
-public class SelectionReadOnlyResponseModel
+public partial class SelectionReadOnlyResponseModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("id")]
   public Guid? Id { get; set; }

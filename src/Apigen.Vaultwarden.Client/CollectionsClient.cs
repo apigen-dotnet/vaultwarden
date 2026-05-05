@@ -14,7 +14,7 @@ namespace Apigen.Vaultwarden.Client;
 /// <summary>
 /// Client for Collections operations
 /// </summary>
-public class CollectionsClient
+public partial class CollectionsClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

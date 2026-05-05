@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// WebAuthnLoginRotateKeyRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/WebAuthnLoginRotateKeyRequestModel
 /// </summary>
-public class WebAuthnLoginRotateKeyRequestModel
+public partial class WebAuthnLoginRotateKeyRequestModel
 {
   [Required]
   [System.Text.Json.Serialization.JsonPropertyName("id")]

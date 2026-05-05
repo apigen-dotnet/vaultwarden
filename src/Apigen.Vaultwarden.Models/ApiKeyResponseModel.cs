@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// ApiKeyResponseModel from OpenAPI schema.
 /// Schema path: #/components/schemas/ApiKeyResponseModel
 /// </summary>
-public class ApiKeyResponseModel
+public partial class ApiKeyResponseModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("object")]
   public string? Object { get; set; }

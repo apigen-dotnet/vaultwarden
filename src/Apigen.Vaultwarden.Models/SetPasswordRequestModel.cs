@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// SetPasswordRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/SetPasswordRequestModel
 /// </summary>
-public class SetPasswordRequestModel
+public partial class SetPasswordRequestModel
 {
   [Required]
   [MinLength(0)]

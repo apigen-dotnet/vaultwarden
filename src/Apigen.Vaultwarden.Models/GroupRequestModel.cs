@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// GroupRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/GroupRequestModel
 /// </summary>
-public class GroupRequestModel
+public partial class GroupRequestModel
 {
   [Required]
   [MinLength(0)]

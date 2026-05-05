@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// ResetPasswordWithOrgIdRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/ResetPasswordWithOrgIdRequestModel
 /// </summary>
-public class ResetPasswordWithOrgIdRequestModel
+public partial class ResetPasswordWithOrgIdRequestModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("resetPasswordKey")]
   public string? ResetPasswordKey { get; set; }

@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// OrganizationAutoEnrollStatusResponseModel from OpenAPI schema.
 /// Schema path: #/components/schemas/OrganizationAutoEnrollStatusResponseModel
 /// </summary>
-public class OrganizationAutoEnrollStatusResponseModel
+public partial class OrganizationAutoEnrollStatusResponseModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("object")]
   public string? Object { get; set; }

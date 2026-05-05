@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// TokenErrorResponse from OpenAPI schema.
 /// Schema path: #/components/schemas/TokenErrorResponse
 /// </summary>
-public class TokenErrorResponse
+public partial class TokenErrorResponse
 {
   [System.Text.Json.Serialization.JsonPropertyName("error")]
   public string? Error { get; set; }

@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// UserKeyResponseModel from OpenAPI schema.
 /// Schema path: #/components/schemas/UserKeyResponseModel
 /// </summary>
-public class UserKeyResponseModel
+public partial class UserKeyResponseModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("object")]
   public string? Object { get; set; }

@@ -9,7 +9,7 @@ namespace Apigen.Vaultwarden.Client;
 /// <summary>
 /// Base class for request objects
 /// </summary>
-public abstract class BaseRequest
+public abstract partial class BaseRequest
 {
   public virtual string ToQueryString() => string.Empty;
 }

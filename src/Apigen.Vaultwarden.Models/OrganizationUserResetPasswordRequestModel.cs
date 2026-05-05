@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// OrganizationUserResetPasswordRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/OrganizationUserResetPasswordRequestModel
 /// </summary>
-public class OrganizationUserResetPasswordRequestModel
+public partial class OrganizationUserResetPasswordRequestModel
 {
   [Required]
   [MinLength(0)]

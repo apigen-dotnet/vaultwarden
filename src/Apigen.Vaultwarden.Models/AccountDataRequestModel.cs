@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// AccountDataRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/AccountDataRequestModel
 /// </summary>
-public class AccountDataRequestModel
+public partial class AccountDataRequestModel
 {
   [Required]
   [System.Text.Json.Serialization.JsonPropertyName("ciphers")]

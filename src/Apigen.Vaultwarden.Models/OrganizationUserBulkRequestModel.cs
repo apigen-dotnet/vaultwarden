@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// OrganizationUserBulkRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/OrganizationUserBulkRequestModel
 /// </summary>
-public class OrganizationUserBulkRequestModel
+public partial class OrganizationUserBulkRequestModel
 {
   [Required]
   [System.Text.Json.Serialization.JsonPropertyName("ids")]

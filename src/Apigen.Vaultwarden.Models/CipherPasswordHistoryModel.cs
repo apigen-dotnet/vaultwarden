@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// CipherPasswordHistoryModel from OpenAPI schema.
 /// Schema path: #/components/schemas/CipherPasswordHistoryModel
 /// </summary>
-public class CipherPasswordHistoryModel
+public partial class CipherPasswordHistoryModel
 {
   [Required]
   [MinLength(0)]

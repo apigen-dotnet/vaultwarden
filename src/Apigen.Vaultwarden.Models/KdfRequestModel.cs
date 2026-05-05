@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// KdfRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/KdfRequestModel
 /// </summary>
-public class KdfRequestModel
+public partial class KdfRequestModel
 {
   [Required]
   [System.Text.Json.Serialization.JsonPropertyName("kdfType")]

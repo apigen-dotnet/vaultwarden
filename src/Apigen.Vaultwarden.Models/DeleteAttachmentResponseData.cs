@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// DeleteAttachmentResponseData from OpenAPI schema.
 /// Schema path: #/components/schemas/DeleteAttachmentResponseData
 /// </summary>
-public class DeleteAttachmentResponseData
+public partial class DeleteAttachmentResponseData
 {
   [System.Text.Json.Serialization.JsonPropertyName("cipher")]
   public Cipher? Cipher { get; set; }

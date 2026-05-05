@@ -11,7 +11,7 @@ namespace Apigen.Vaultwarden.Client;
 /// Request parameters for 
 /// Operation: GET /api/organizations/{organizationId}/billing/vnext/warnings
 /// </summary>
-public class OrganizationBillingVNextGetWarningsRequest : BaseRequest
+public partial class OrganizationBillingVNextGetWarningsRequest : BaseRequest
 {
   /// <summary>
   /// id

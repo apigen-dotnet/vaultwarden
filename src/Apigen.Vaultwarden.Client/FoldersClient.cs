@@ -14,7 +14,7 @@ namespace Apigen.Vaultwarden.Client;
 /// <summary>
 /// Client for Folders operations
 /// </summary>
-public class FoldersClient
+public partial class FoldersClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

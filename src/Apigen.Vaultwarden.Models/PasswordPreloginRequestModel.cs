@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// PasswordPreloginRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/PasswordPreloginRequestModel
 /// </summary>
-public class PasswordPreloginRequestModel
+public partial class PasswordPreloginRequestModel
 {
   [Required]
   [MinLength(0)]

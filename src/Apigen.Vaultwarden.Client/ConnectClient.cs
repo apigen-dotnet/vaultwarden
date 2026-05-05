@@ -14,7 +14,7 @@ namespace Apigen.Vaultwarden.Client;
 /// <summary>
 /// Client for Connect operations
 /// </summary>
-public class ConnectClient
+public partial class ConnectClient
 {
   private readonly HttpClient _httpClient;
   private readonly ILogger? _logger;

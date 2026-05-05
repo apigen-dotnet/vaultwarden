@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// AccountKeysRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/AccountKeysRequestModel
 /// </summary>
-public class AccountKeysRequestModel
+public partial class AccountKeysRequestModel
 {
   [Required]
   [System.Text.Json.Serialization.JsonPropertyName("userKeyEncryptedAccountPrivateKey")]

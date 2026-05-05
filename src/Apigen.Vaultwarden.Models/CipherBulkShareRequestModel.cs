@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// CipherBulkShareRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/CipherBulkShareRequestModel
 /// </summary>
-public class CipherBulkShareRequestModel
+public partial class CipherBulkShareRequestModel
 {
   [Required]
   [System.Text.Json.Serialization.JsonPropertyName("collectionIds")]

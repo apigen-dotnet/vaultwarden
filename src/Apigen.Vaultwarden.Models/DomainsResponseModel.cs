@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// DomainsResponseModel from OpenAPI schema.
 /// Schema path: #/components/schemas/DomainsResponseModel
 /// </summary>
-public class DomainsResponseModel
+public partial class DomainsResponseModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("object")]
   public string? Object { get; set; }

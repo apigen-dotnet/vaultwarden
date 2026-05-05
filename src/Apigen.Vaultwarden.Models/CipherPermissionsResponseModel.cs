@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// CipherPermissionsResponseModel from OpenAPI schema.
 /// Schema path: #/components/schemas/CipherPermissionsResponseModel
 /// </summary>
-public class CipherPermissionsResponseModel
+public partial class CipherPermissionsResponseModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("delete")]
   public bool? Delete { get; set; }

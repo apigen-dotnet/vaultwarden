@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// SecurityStateModel from OpenAPI schema.
 /// Schema path: #/components/schemas/SecurityStateModel
 /// </summary>
-public class SecurityStateModel
+public partial class SecurityStateModel
 {
   [Required]
   [MinLength(0)]

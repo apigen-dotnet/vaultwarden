@@ -11,7 +11,7 @@ namespace Apigen.Vaultwarden.Client;
 /// Request parameters for 
 /// Operation: GET /api/sync
 /// </summary>
-public class SyncGetRequest : BaseRequest
+public partial class SyncGetRequest : BaseRequest
 {
   /// <summary>
   /// excludeDomains

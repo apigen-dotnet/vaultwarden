@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// PlanResponseModel from OpenAPI schema.
 /// Schema path: #/components/schemas/PlanResponseModel
 /// </summary>
-public class PlanResponseModel
+public partial class PlanResponseModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("object")]
   public string? Object { get; set; }

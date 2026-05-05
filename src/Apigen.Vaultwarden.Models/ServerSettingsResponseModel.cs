@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// ServerSettingsResponseModel from OpenAPI schema.
 /// Schema path: #/components/schemas/ServerSettingsResponseModel
 /// </summary>
-public class ServerSettingsResponseModel
+public partial class ServerSettingsResponseModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("disableUserRegistration")]
   public bool? DisableUserRegistration { get; set; }

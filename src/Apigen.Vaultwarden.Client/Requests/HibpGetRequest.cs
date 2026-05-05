@@ -11,7 +11,7 @@ namespace Apigen.Vaultwarden.Client;
 /// Request parameters for 
 /// Operation: GET /api/hibp/breach
 /// </summary>
-public class HibpGetRequest : BaseRequest
+public partial class HibpGetRequest : BaseRequest
 {
   /// <summary>
   /// username

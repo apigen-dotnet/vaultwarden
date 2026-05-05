@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// ProfileProviderResponseModel from OpenAPI schema.
 /// Schema path: #/components/schemas/ProfileProviderResponseModel
 /// </summary>
-public class ProfileProviderResponseModel
+public partial class ProfileProviderResponseModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("object")]
   public string? Object { get; set; }

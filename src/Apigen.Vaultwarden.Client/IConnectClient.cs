@@ -9,7 +9,7 @@ namespace Apigen.Vaultwarden.Client;
 /// <summary>
 /// Interface for Connect operations
 /// </summary>
-public interface IConnectClient
+public partial interface IConnectClient
 {
   /// <summary>
   /// Exchange credentials for an access token (OAuth2 password or client_credentials grant)

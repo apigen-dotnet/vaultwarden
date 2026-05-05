@@ -9,7 +9,7 @@ namespace Apigen.Vaultwarden.Client;
 /// <summary>
 /// Interface for Sends operations
 /// </summary>
-public interface ISendsClient
+public partial interface ISendsClient
 {
   /// <summary>
   /// 

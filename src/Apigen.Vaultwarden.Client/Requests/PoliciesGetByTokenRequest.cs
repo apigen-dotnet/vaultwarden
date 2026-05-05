@@ -11,7 +11,7 @@ namespace Apigen.Vaultwarden.Client;
 /// Request parameters for 
 /// Operation: GET /api/organizations/{orgId}/policies/token
 /// </summary>
-public class PoliciesGetByTokenRequest : BaseRequest
+public partial class PoliciesGetByTokenRequest : BaseRequest
 {
   /// <summary>
   /// email

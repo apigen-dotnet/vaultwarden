@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// SendTextModel from OpenAPI schema.
 /// Schema path: #/components/schemas/SendTextModel
 /// </summary>
-public class SendTextModel
+public partial class SendTextModel
 {
   [MinLength(0)]
   [MaxLength(1000)]

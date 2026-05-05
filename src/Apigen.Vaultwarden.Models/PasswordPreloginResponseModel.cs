@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// PasswordPreloginResponseModel from OpenAPI schema.
 /// Schema path: #/components/schemas/PasswordPreloginResponseModel
 /// </summary>
-public class PasswordPreloginResponseModel
+public partial class PasswordPreloginResponseModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("kdf")]
   public KdfType? Kdf { get; set; }

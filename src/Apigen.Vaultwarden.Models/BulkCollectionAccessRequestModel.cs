@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// BulkCollectionAccessRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/BulkCollectionAccessRequestModel
 /// </summary>
-public class BulkCollectionAccessRequestModel
+public partial class BulkCollectionAccessRequestModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("collectionIds")]
   public List<Guid>? CollectionIds { get; set; }

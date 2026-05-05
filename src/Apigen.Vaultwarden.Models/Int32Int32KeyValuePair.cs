@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// Int32Int32KeyValuePair from OpenAPI schema.
 /// Schema path: #/components/schemas/Int32Int32KeyValuePair
 /// </summary>
-public class Int32Int32KeyValuePair
+public partial class Int32Int32KeyValuePair
 {
   [System.Text.Json.Serialization.JsonPropertyName("key")]
   public int? Key { get; set; }

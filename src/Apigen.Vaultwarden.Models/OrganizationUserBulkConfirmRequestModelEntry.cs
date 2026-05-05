@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// OrganizationUserBulkConfirmRequestModelEntry from OpenAPI schema.
 /// Schema path: #/components/schemas/OrganizationUserBulkConfirmRequestModelEntry
 /// </summary>
-public class OrganizationUserBulkConfirmRequestModelEntry
+public partial class OrganizationUserBulkConfirmRequestModelEntry
 {
   [Required]
   [System.Text.Json.Serialization.JsonPropertyName("id")]

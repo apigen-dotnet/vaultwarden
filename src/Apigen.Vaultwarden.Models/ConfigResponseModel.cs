@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// ConfigResponseModel from OpenAPI schema.
 /// Schema path: #/components/schemas/ConfigResponseModel
 /// </summary>
-public class ConfigResponseModel
+public partial class ConfigResponseModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("object")]
   public string? Object { get; set; }

@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// PublicKeyEncryptionKeyPairRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/PublicKeyEncryptionKeyPairRequestModel
 /// </summary>
-public class PublicKeyEncryptionKeyPairRequestModel
+public partial class PublicKeyEncryptionKeyPairRequestModel
 {
   [Required]
   [System.Text.Json.Serialization.JsonPropertyName("wrappedPrivateKey")]

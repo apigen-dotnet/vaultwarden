@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// UserDecryptionResponseModel from OpenAPI schema.
 /// Schema path: #/components/schemas/UserDecryptionResponseModel
 /// </summary>
-public class UserDecryptionResponseModel
+public partial class UserDecryptionResponseModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("masterPasswordUnlock")]
   public MasterPasswordUnlockResponseModel? MasterPasswordUnlock { get; set; }

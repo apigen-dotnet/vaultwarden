@@ -24,7 +24,7 @@ namespace Apigen.Vaultwarden.Models;
 /// Sync data for provider users and their managed organizations.
 /// Note: see Bit.Api.AdminConsole.Models.Response.ProfileOrganizationResponseModel for organization sync data received by organization members.
 /// </summary>
-public class ProfileProviderOrganizationResponseModel
+public partial class ProfileProviderOrganizationResponseModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("object")]
   public string? Object { get; set; }

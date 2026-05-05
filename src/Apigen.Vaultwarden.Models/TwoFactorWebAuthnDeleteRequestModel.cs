@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// TwoFactorWebAuthnDeleteRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/TwoFactorWebAuthnDeleteRequestModel
 /// </summary>
-public class TwoFactorWebAuthnDeleteRequestModel
+public partial class TwoFactorWebAuthnDeleteRequestModel
 {
   [MinLength(0)]
   [MaxLength(300)]

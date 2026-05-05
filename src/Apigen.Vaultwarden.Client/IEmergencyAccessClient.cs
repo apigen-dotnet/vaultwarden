@@ -9,7 +9,7 @@ namespace Apigen.Vaultwarden.Client;
 /// <summary>
 /// Interface for EmergencyAccess operations
 /// </summary>
-public interface IEmergencyAccessClient
+public partial interface IEmergencyAccessClient
 {
   /// <summary>
   /// 

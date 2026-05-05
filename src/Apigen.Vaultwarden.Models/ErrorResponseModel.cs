@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// ErrorResponseModel from OpenAPI schema.
 /// Schema path: #/components/schemas/ErrorResponseModel
 /// </summary>
-public class ErrorResponseModel
+public partial class ErrorResponseModel
 {
   /// <summary>
   /// String representing the object&apos;s type. Objects of the same type share the same properties.

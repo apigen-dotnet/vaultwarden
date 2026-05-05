@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// EmailTokenRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/EmailTokenRequestModel
 /// </summary>
-public class EmailTokenRequestModel
+public partial class EmailTokenRequestModel
 {
   [MinLength(0)]
   [MaxLength(300)]

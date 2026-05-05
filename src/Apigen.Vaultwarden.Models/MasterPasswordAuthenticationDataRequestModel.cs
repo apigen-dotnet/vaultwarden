@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// MasterPasswordAuthenticationDataRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/MasterPasswordAuthenticationDataRequestModel
 /// </summary>
-public class MasterPasswordAuthenticationDataRequestModel
+public partial class MasterPasswordAuthenticationDataRequestModel
 {
   [Required]
   [System.Text.Json.Serialization.JsonPropertyName("kdf")]

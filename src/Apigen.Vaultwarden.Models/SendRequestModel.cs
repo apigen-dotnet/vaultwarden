@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// SendRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/SendRequestModel
 /// </summary>
-public class SendRequestModel
+public partial class SendRequestModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("type")]
   public SendType? Type { get; set; }

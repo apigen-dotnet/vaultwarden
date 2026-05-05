@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// SendFileModel from OpenAPI schema.
 /// Schema path: #/components/schemas/SendFileModel
 /// </summary>
-public class SendFileModel
+public partial class SendFileModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("id")]
   public string? Id { get; set; }

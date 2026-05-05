@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// AttachmentUploadDataResponseModel from OpenAPI schema.
 /// Schema path: #/components/schemas/AttachmentUploadDataResponseModel
 /// </summary>
-public class AttachmentUploadDataResponseModel
+public partial class AttachmentUploadDataResponseModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("object")]
   public string? Object { get; set; }

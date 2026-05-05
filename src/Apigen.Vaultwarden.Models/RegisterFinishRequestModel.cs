@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// RegisterFinishRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/RegisterFinishRequestModel
 /// </summary>
-public class RegisterFinishRequestModel
+public partial class RegisterFinishRequestModel
 {
   [Required]
   [MinLength(0)]

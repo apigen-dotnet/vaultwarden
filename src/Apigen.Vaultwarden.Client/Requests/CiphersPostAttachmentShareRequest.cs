@@ -11,7 +11,7 @@ namespace Apigen.Vaultwarden.Client;
 /// Request parameters for 
 /// Operation: POST /api/ciphers/{id}/attachment/{attachmentId}/share
 /// </summary>
-public class CiphersPostAttachmentShareRequest : BaseRequest
+public partial class CiphersPostAttachmentShareRequest : BaseRequest
 {
   /// <summary>
   /// organizationId

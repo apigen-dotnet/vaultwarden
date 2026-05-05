@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// AuthenticationExtensionsClientOutputs from OpenAPI schema.
 /// Schema path: #/components/schemas/AuthenticationExtensionsClientOutputs
 /// </summary>
-public class AuthenticationExtensionsClientOutputs
+public partial class AuthenticationExtensionsClientOutputs
 {
   [System.Text.Json.Serialization.JsonPropertyName("example.extension")]
   public object? ExampleDotextension { get; set; }

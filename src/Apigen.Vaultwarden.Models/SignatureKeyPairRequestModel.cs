@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// SignatureKeyPairRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/SignatureKeyPairRequestModel
 /// </summary>
-public class SignatureKeyPairRequestModel
+public partial class SignatureKeyPairRequestModel
 {
   [Required]
   [System.Text.Json.Serialization.JsonPropertyName("signatureAlgorithm")]

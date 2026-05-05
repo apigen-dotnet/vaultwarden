@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// FolderRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/FolderRequestModel
 /// </summary>
-public class FolderRequestModel
+public partial class FolderRequestModel
 {
   [Required]
   [MinLength(0)]

@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// FolderResponseModelListResponseModel from OpenAPI schema.
 /// Schema path: #/components/schemas/FolderResponseModelListResponseModel
 /// </summary>
-public class FolderResponseModelListResponseModel
+public partial class FolderResponseModelListResponseModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("object")]
   public string? Object { get; set; }

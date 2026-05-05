@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// GroupBulkRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/GroupBulkRequestModel
 /// </summary>
-public class GroupBulkRequestModel
+public partial class GroupBulkRequestModel
 {
   [Required]
   [System.Text.Json.Serialization.JsonPropertyName("ids")]

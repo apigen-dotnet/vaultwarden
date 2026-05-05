@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// OrganizationDomainSsoDetailsRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/OrganizationDomainSsoDetailsRequestModel
 /// </summary>
-public class OrganizationDomainSsoDetailsRequestModel
+public partial class OrganizationDomainSsoDetailsRequestModel
 {
   [Required]
   [MinLength(1)]

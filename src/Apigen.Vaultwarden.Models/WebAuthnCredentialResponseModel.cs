@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// WebAuthnCredentialResponseModel from OpenAPI schema.
 /// Schema path: #/components/schemas/WebAuthnCredentialResponseModel
 /// </summary>
-public class WebAuthnCredentialResponseModel
+public partial class WebAuthnCredentialResponseModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("object")]
   public string? Object { get; set; }

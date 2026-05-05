@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// SyncResponseModel from OpenAPI schema.
 /// Schema path: #/components/schemas/SyncResponseModel
 /// </summary>
-public class SyncResponseModel
+public partial class SyncResponseModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("object")]
   public string? Object { get; set; }

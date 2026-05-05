@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// CipherBulkDeleteRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/CipherBulkDeleteRequestModel
 /// </summary>
-public class CipherBulkDeleteRequestModel
+public partial class CipherBulkDeleteRequestModel
 {
   [Required]
   [System.Text.Json.Serialization.JsonPropertyName("ids")]

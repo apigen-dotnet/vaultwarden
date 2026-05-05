@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// CipherSecureNoteModel from OpenAPI schema.
 /// Schema path: #/components/schemas/CipherSecureNoteModel
 /// </summary>
-public class CipherSecureNoteModel
+public partial class CipherSecureNoteModel
 {
   [System.Text.Json.Serialization.JsonPropertyName("type")]
   public SecureNoteType? Type { get; set; }

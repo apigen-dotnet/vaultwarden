@@ -21,7 +21,7 @@ namespace Apigen.Vaultwarden.Models;
 /// CipherWithIdRequestModel from OpenAPI schema.
 /// Schema path: #/components/schemas/CipherWithIdRequestModel
 /// </summary>
-public class CipherWithIdRequestModel
+public partial class CipherWithIdRequestModel
 {
   /// <summary>
   /// The Id of the user that encrypted the cipher. It should always represent a UserId.
