@@ -12,7 +12,7 @@ namespace Apigen.Vaultwarden.Client;
 /// <summary>
 /// Main API client for accessing all resources
 /// </summary>
-public partial class VaultwardenApiClient
+public partial class VaultwardenApiClient : IDisposable
 {
   private readonly HttpClient _httpClient;
   private readonly bool _disposeHttpClient;
