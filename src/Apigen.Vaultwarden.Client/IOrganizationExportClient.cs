@@ -1,4 +1,5 @@
 using System.Text.Json;
+using System.Threading;
 using System.Threading.Tasks;
 using Apigen.Vaultwarden.Models;
 
@@ -15,6 +16,6 @@ public partial interface IOrganizationExportClient
   /// 
   /// Operation: GET /api/organizations/{organizationId}/export
   /// </summary>
-  Task OrganizationExportExportAsync(string organizationId);
+  Task OrganizationExportExportAsync(string organizationId, CancellationToken cancellationToken = default);
 
 }

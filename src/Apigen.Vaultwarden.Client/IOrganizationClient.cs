@@ -1,4 +1,5 @@
 using System.Text.Json;
+using System.Threading;
 using System.Threading.Tasks;
 using Apigen.Vaultwarden.Models;
 
@@ -15,6 +16,6 @@ public partial interface IOrganizationClient
   /// Import members and groups.
   /// Operation: POST /public/organization/import
   /// </summary>
-  Task<OkResult> OrganizationImportAsync(Apigen.Vaultwarden.Models.OrganizationImportRequestModel organizationImportRequestModel);
+  Task<OkResult> OrganizationImportAsync(Apigen.Vaultwarden.Models.OrganizationImportRequestModel organizationImportRequestModel, CancellationToken cancellationToken = default);
 
 }

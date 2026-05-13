@@ -1,4 +1,5 @@
 using System.Text.Json;
+using System.Threading;
 using System.Threading.Tasks;
 using Apigen.Vaultwarden.Models;
 
@@ -15,18 +16,18 @@ public partial interface ISettingsClient
   /// 
   /// Operation: GET /api/settings/domains
   /// </summary>
-  Task<DomainsResponseModel> SettingsGetDomainsAsync(SettingsGetDomainsRequest? request = null);
+  Task<DomainsResponseModel> SettingsGetDomainsAsync(SettingsGetDomainsRequest? request = null, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: PUT /api/settings/domains
   /// </summary>
-  Task<DomainsResponseModel> SettingsPutDomainsAsync(Apigen.Vaultwarden.Models.UpdateDomainsRequestModel updateDomainsRequestModel);
+  Task<DomainsResponseModel> SettingsPutDomainsAsync(Apigen.Vaultwarden.Models.UpdateDomainsRequestModel updateDomainsRequestModel, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: POST /api/settings/domains
   /// </summary>
-  Task<DomainsResponseModel> SettingsPostDomainsAsync(Apigen.Vaultwarden.Models.UpdateDomainsRequestModel updateDomainsRequestModel);
+  Task<DomainsResponseModel> SettingsPostDomainsAsync(Apigen.Vaultwarden.Models.UpdateDomainsRequestModel updateDomainsRequestModel, CancellationToken cancellationToken = default);
 
 }

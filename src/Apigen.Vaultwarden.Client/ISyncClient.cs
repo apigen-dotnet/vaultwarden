@@ -1,4 +1,5 @@
 using System.Text.Json;
+using System.Threading;
 using System.Threading.Tasks;
 using Apigen.Vaultwarden.Models;
 
@@ -15,6 +16,6 @@ public partial interface ISyncClient
   /// 
   /// Operation: GET /api/sync
   /// </summary>
-  Task<SyncResponseModel> SyncGetAsync(SyncGetRequest? request = null);
+  Task<SyncResponseModel> SyncGetAsync(SyncGetRequest? request = null, CancellationToken cancellationToken = default);
 
 }

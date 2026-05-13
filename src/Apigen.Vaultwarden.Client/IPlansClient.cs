@@ -1,4 +1,5 @@
 using System.Text.Json;
+using System.Threading;
 using System.Threading.Tasks;
 using Apigen.Vaultwarden.Models;
 
@@ -15,6 +16,6 @@ public partial interface IPlansClient
   /// 
   /// Operation: GET /api/plans
   /// </summary>
-  Task<PlanResponseModelListResponseModel> PlansGetAsync();
+  Task<PlanResponseModelListResponseModel> PlansGetAsync(CancellationToken cancellationToken = default);
 
 }

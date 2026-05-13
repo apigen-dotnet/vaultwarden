@@ -1,4 +1,5 @@
 using System.Text.Json;
+using System.Threading;
 using System.Threading.Tasks;
 using Apigen.Vaultwarden.Models;
 
@@ -15,6 +16,6 @@ public partial interface IOrganizationBillingClient
   /// 
   /// Operation: GET /api/organizations/{organizationId}/billing/metadata
   /// </summary>
-  Task OrganizationBillingGetMetadataAsync(string organizationId);
+  Task OrganizationBillingGetMetadataAsync(string organizationId, CancellationToken cancellationToken = default);
 
 }

@@ -1,4 +1,5 @@
 using System.Text.Json;
+using System.Threading;
 using System.Threading.Tasks;
 using Apigen.Vaultwarden.Models;
 
@@ -15,6 +16,6 @@ public partial interface IConnectClient
   /// Exchange credentials for an access token (OAuth2 password or client_credentials grant)
   /// Operation: POST /identity/connect/token
   /// </summary>
-  Task<TokenResponse> ConnectTokenAsync(Apigen.Vaultwarden.Models.ConnectTokenRequest connectTokenRequest);
+  Task<TokenResponse> ConnectTokenAsync(Apigen.Vaultwarden.Models.ConnectTokenRequest connectTokenRequest, CancellationToken cancellationToken = default);
 
 }

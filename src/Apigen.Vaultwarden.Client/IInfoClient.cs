@@ -1,4 +1,5 @@
 using System.Text.Json;
+using System.Threading;
 using System.Threading.Tasks;
 using Apigen.Vaultwarden.Models;
 
@@ -15,18 +16,18 @@ public partial interface IInfoClient
   /// 
   /// Operation: GET /api/alive
   /// </summary>
-  Task<JsonElement> InfoGetAliveAsync();
+  Task<JsonElement> InfoGetAliveAsync(CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: GET /api/now
   /// </summary>
-  Task<JsonElement> InfoGetNowAsync();
+  Task<JsonElement> InfoGetNowAsync(CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: GET /api/version
   /// </summary>
-  Task InfoGetVersionAsync();
+  Task InfoGetVersionAsync(CancellationToken cancellationToken = default);
 
 }

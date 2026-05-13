@@ -1,4 +1,5 @@
 using System.Text.Json;
+using System.Threading;
 using System.Threading.Tasks;
 using Apigen.Vaultwarden.Models;
 
@@ -15,318 +16,318 @@ public partial interface ICiphersClient
   /// 
   /// Operation: GET /api/ciphers/{id}
   /// </summary>
-  Task<CipherResponseModel> GetAsync(string id);
+  Task<CipherResponseModel> GetAsync(string id, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: PUT /api/ciphers/{id}
   /// </summary>
-  Task<CipherResponseModel> UpdateAsync(string id, Apigen.Vaultwarden.Models.CipherRequestModel cipherRequestModel);
+  Task<CipherResponseModel> UpdateAsync(string id, Apigen.Vaultwarden.Models.CipherRequestModel cipherRequestModel, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: POST /api/ciphers/{id}
   /// </summary>
-  Task<CipherResponseModel> CiphersPostPutAsync(string id, Apigen.Vaultwarden.Models.CipherRequestModel cipherRequestModel);
+  Task<CipherResponseModel> CiphersPostPutAsync(string id, Apigen.Vaultwarden.Models.CipherRequestModel cipherRequestModel, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: DELETE /api/ciphers/{id}
   /// </summary>
-  Task DeleteAsync(string id);
+  Task DeleteAsync(string id, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: GET /api/ciphers/{id}/admin
   /// </summary>
-  Task<CipherMiniResponseModel> CiphersGetAdminAsync(string id);
+  Task<CipherMiniResponseModel> CiphersGetAdminAsync(string id, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: PUT /api/ciphers/{id}/admin
   /// </summary>
-  Task<CipherMiniResponseModel> CiphersPutAdminAsync(string id, Apigen.Vaultwarden.Models.CipherRequestModel cipherRequestModel);
+  Task<CipherMiniResponseModel> CiphersPutAdminAsync(string id, Apigen.Vaultwarden.Models.CipherRequestModel cipherRequestModel, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: POST /api/ciphers/{id}/admin
   /// </summary>
-  Task<CipherMiniResponseModel> CiphersPostPutAdminAsync(string id, Apigen.Vaultwarden.Models.CipherRequestModel cipherRequestModel);
+  Task<CipherMiniResponseModel> CiphersPostPutAdminAsync(string id, Apigen.Vaultwarden.Models.CipherRequestModel cipherRequestModel, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: DELETE /api/ciphers/{id}/admin
   /// </summary>
-  Task CiphersDeleteAdminAsync(string id);
+  Task CiphersDeleteAdminAsync(string id, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: GET /api/ciphers/{id}/details
   /// </summary>
-  Task<CipherDetailsResponseModel> CiphersGetDetailsAsync(string id);
+  Task<CipherDetailsResponseModel> CiphersGetDetailsAsync(string id, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: GET /api/ciphers
   /// </summary>
-  Task<CipherDetailsResponseModelListResponseModel> CiphersGetAllAsync();
+  Task<CipherDetailsResponseModelListResponseModel> CiphersGetAllAsync(CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: POST /api/ciphers
   /// </summary>
-  Task<CipherResponseModel> CiphersPostAsync(Apigen.Vaultwarden.Models.CipherRequestModel cipherRequestModel);
+  Task<CipherResponseModel> CiphersPostAsync(Apigen.Vaultwarden.Models.CipherRequestModel cipherRequestModel, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: DELETE /api/ciphers
   /// </summary>
-  Task CiphersDeleteManyAsync(Apigen.Vaultwarden.Models.CipherBulkDeleteRequestModel cipherBulkDeleteRequestModel);
+  Task CiphersDeleteManyAsync(Apigen.Vaultwarden.Models.CipherBulkDeleteRequestModel cipherBulkDeleteRequestModel, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: POST /api/ciphers/create
   /// </summary>
-  Task<CipherResponseModel> CiphersPostCreateAsync(Apigen.Vaultwarden.Models.CipherCreateRequestModel cipherCreateRequestModel);
+  Task<CipherResponseModel> CiphersPostCreateAsync(Apigen.Vaultwarden.Models.CipherCreateRequestModel cipherCreateRequestModel, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: POST /api/ciphers/admin
   /// </summary>
-  Task<CipherMiniResponseModel> CiphersPostAdminAsync(Apigen.Vaultwarden.Models.CipherCreateRequestModel cipherCreateRequestModel);
+  Task<CipherMiniResponseModel> CiphersPostAdminAsync(Apigen.Vaultwarden.Models.CipherCreateRequestModel cipherCreateRequestModel, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: DELETE /api/ciphers/admin
   /// </summary>
-  Task CiphersDeleteManyAdminAsync(Apigen.Vaultwarden.Models.CipherBulkDeleteRequestModel cipherBulkDeleteRequestModel);
+  Task CiphersDeleteManyAdminAsync(Apigen.Vaultwarden.Models.CipherBulkDeleteRequestModel cipherBulkDeleteRequestModel, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: GET /api/ciphers/organization-details
   /// </summary>
-  Task<CipherMiniDetailsResponseModelListResponseModel> CiphersGetOrganizationCiphersAsync(CiphersGetOrganizationCiphersRequest? request = null);
+  Task<CipherMiniDetailsResponseModelListResponseModel> CiphersGetOrganizationCiphersAsync(CiphersGetOrganizationCiphersRequest? request = null, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: PUT /api/ciphers/{id}/partial
   /// </summary>
-  Task<CipherResponseModel> CiphersPutPartialAsync(string id, Apigen.Vaultwarden.Models.CipherPartialRequestModel cipherPartialRequestModel);
+  Task<CipherResponseModel> CiphersPutPartialAsync(string id, Apigen.Vaultwarden.Models.CipherPartialRequestModel cipherPartialRequestModel, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: POST /api/ciphers/{id}/partial
   /// </summary>
-  Task<CipherResponseModel> CiphersPostPartialAsync(string id, Apigen.Vaultwarden.Models.CipherPartialRequestModel cipherPartialRequestModel);
+  Task<CipherResponseModel> CiphersPostPartialAsync(string id, Apigen.Vaultwarden.Models.CipherPartialRequestModel cipherPartialRequestModel, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: PUT /api/ciphers/{id}/share
   /// </summary>
-  Task<CipherResponseModel> CiphersPutShareAsync(string id, Apigen.Vaultwarden.Models.CipherShareRequestModel cipherShareRequestModel);
+  Task<CipherResponseModel> CiphersPutShareAsync(string id, Apigen.Vaultwarden.Models.CipherShareRequestModel cipherShareRequestModel, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: POST /api/ciphers/{id}/share
   /// </summary>
-  Task<CipherResponseModel> CiphersPostShareAsync(string id, Apigen.Vaultwarden.Models.CipherShareRequestModel cipherShareRequestModel);
+  Task<CipherResponseModel> CiphersPostShareAsync(string id, Apigen.Vaultwarden.Models.CipherShareRequestModel cipherShareRequestModel, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: PUT /api/ciphers/{id}/collections
   /// </summary>
-  Task<CipherDetailsResponseModel> CiphersPutCollectionsAsync(string id, Apigen.Vaultwarden.Models.CipherCollectionsRequestModel cipherCollectionsRequestModel);
+  Task<CipherDetailsResponseModel> CiphersPutCollectionsAsync(string id, Apigen.Vaultwarden.Models.CipherCollectionsRequestModel cipherCollectionsRequestModel, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: POST /api/ciphers/{id}/collections
   /// </summary>
-  Task<CipherDetailsResponseModel> CiphersPostCollectionsAsync(string id, Apigen.Vaultwarden.Models.CipherCollectionsRequestModel cipherCollectionsRequestModel);
+  Task<CipherDetailsResponseModel> CiphersPostCollectionsAsync(string id, Apigen.Vaultwarden.Models.CipherCollectionsRequestModel cipherCollectionsRequestModel, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: PUT /api/ciphers/{id}/collections_v2
   /// </summary>
-  Task<OptionalCipherDetailsResponseModel> CiphersPutCollectionsVNextAsync(string id, Apigen.Vaultwarden.Models.CipherCollectionsRequestModel cipherCollectionsRequestModel);
+  Task<OptionalCipherDetailsResponseModel> CiphersPutCollectionsVNextAsync(string id, Apigen.Vaultwarden.Models.CipherCollectionsRequestModel cipherCollectionsRequestModel, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: POST /api/ciphers/{id}/collections_v2
   /// </summary>
-  Task<OptionalCipherDetailsResponseModel> CiphersPostCollectionsVNextAsync(string id, Apigen.Vaultwarden.Models.CipherCollectionsRequestModel cipherCollectionsRequestModel);
+  Task<OptionalCipherDetailsResponseModel> CiphersPostCollectionsVNextAsync(string id, Apigen.Vaultwarden.Models.CipherCollectionsRequestModel cipherCollectionsRequestModel, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: PUT /api/ciphers/{id}/collections-admin
   /// </summary>
-  Task<CipherMiniDetailsResponseModel> CiphersPutCollectionsAdminAsync(string id, Apigen.Vaultwarden.Models.CipherCollectionsRequestModel cipherCollectionsRequestModel);
+  Task<CipherMiniDetailsResponseModel> CiphersPutCollectionsAdminAsync(string id, Apigen.Vaultwarden.Models.CipherCollectionsRequestModel cipherCollectionsRequestModel, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: POST /api/ciphers/{id}/collections-admin
   /// </summary>
-  Task<CipherMiniDetailsResponseModel> CiphersPostCollectionsAdminAsync(string id, Apigen.Vaultwarden.Models.CipherCollectionsRequestModel cipherCollectionsRequestModel);
+  Task<CipherMiniDetailsResponseModel> CiphersPostCollectionsAdminAsync(string id, Apigen.Vaultwarden.Models.CipherCollectionsRequestModel cipherCollectionsRequestModel, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: POST /api/ciphers/bulk-collections
   /// </summary>
-  Task BulkAsync(Apigen.Vaultwarden.Models.CipherBulkUpdateCollectionsRequestModel cipherBulkUpdateCollectionsRequestModel);
+  Task BulkAsync(Apigen.Vaultwarden.Models.CipherBulkUpdateCollectionsRequestModel cipherBulkUpdateCollectionsRequestModel, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: POST /api/ciphers/{id}/delete
   /// </summary>
-  Task CiphersPostDeleteAsync(string id);
+  Task CiphersPostDeleteAsync(string id, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: PUT /api/ciphers/{id}/delete
   /// </summary>
-  Task CiphersPutDeleteAsync(string id);
+  Task CiphersPutDeleteAsync(string id, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: POST /api/ciphers/{id}/delete-admin
   /// </summary>
-  Task CiphersPostDeleteAdminAsync(string id);
+  Task CiphersPostDeleteAdminAsync(string id, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: PUT /api/ciphers/{id}/delete-admin
   /// </summary>
-  Task CiphersPutDeleteAdminAsync(string id);
+  Task CiphersPutDeleteAdminAsync(string id, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: POST /api/ciphers/delete
   /// </summary>
-  Task CiphersPostDeleteManyAsync(Apigen.Vaultwarden.Models.CipherBulkDeleteRequestModel cipherBulkDeleteRequestModel);
+  Task CiphersPostDeleteManyAsync(Apigen.Vaultwarden.Models.CipherBulkDeleteRequestModel cipherBulkDeleteRequestModel, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: PUT /api/ciphers/delete
   /// </summary>
-  Task CiphersPutDeleteManyAsync(Apigen.Vaultwarden.Models.CipherBulkDeleteRequestModel cipherBulkDeleteRequestModel);
+  Task CiphersPutDeleteManyAsync(Apigen.Vaultwarden.Models.CipherBulkDeleteRequestModel cipherBulkDeleteRequestModel, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: POST /api/ciphers/delete-admin
   /// </summary>
-  Task CiphersPostDeleteManyAdminAsync(Apigen.Vaultwarden.Models.CipherBulkDeleteRequestModel cipherBulkDeleteRequestModel);
+  Task CiphersPostDeleteManyAdminAsync(Apigen.Vaultwarden.Models.CipherBulkDeleteRequestModel cipherBulkDeleteRequestModel, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: PUT /api/ciphers/delete-admin
   /// </summary>
-  Task CiphersPutDeleteManyAdminAsync(Apigen.Vaultwarden.Models.CipherBulkDeleteRequestModel cipherBulkDeleteRequestModel);
+  Task CiphersPutDeleteManyAdminAsync(Apigen.Vaultwarden.Models.CipherBulkDeleteRequestModel cipherBulkDeleteRequestModel, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: PUT /api/ciphers/{id}/restore
   /// </summary>
-  Task<CipherResponseModel> CiphersPutRestoreAsync(string id);
+  Task<CipherResponseModel> CiphersPutRestoreAsync(string id, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: PUT /api/ciphers/{id}/restore-admin
   /// </summary>
-  Task<CipherMiniResponseModel> CiphersPutRestoreAdminAsync(string id);
+  Task<CipherMiniResponseModel> CiphersPutRestoreAdminAsync(string id, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: PUT /api/ciphers/restore
   /// </summary>
-  Task<CipherMiniResponseModelListResponseModel> CiphersPutRestoreManyAsync(Apigen.Vaultwarden.Models.CipherBulkRestoreRequestModel cipherBulkRestoreRequestModel);
+  Task<CipherMiniResponseModelListResponseModel> CiphersPutRestoreManyAsync(Apigen.Vaultwarden.Models.CipherBulkRestoreRequestModel cipherBulkRestoreRequestModel, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: PUT /api/ciphers/restore-admin
   /// </summary>
-  Task<CipherMiniResponseModelListResponseModel> CiphersPutRestoreManyAdminAsync(Apigen.Vaultwarden.Models.CipherBulkRestoreRequestModel cipherBulkRestoreRequestModel);
+  Task<CipherMiniResponseModelListResponseModel> CiphersPutRestoreManyAdminAsync(Apigen.Vaultwarden.Models.CipherBulkRestoreRequestModel cipherBulkRestoreRequestModel, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: PUT /api/ciphers/move
   /// </summary>
-  Task CiphersMoveManyAsync(Apigen.Vaultwarden.Models.CipherBulkMoveRequestModel cipherBulkMoveRequestModel);
+  Task CiphersMoveManyAsync(Apigen.Vaultwarden.Models.CipherBulkMoveRequestModel cipherBulkMoveRequestModel, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: POST /api/ciphers/move
   /// </summary>
-  Task CiphersPostMoveManyAsync(Apigen.Vaultwarden.Models.CipherBulkMoveRequestModel cipherBulkMoveRequestModel);
+  Task CiphersPostMoveManyAsync(Apigen.Vaultwarden.Models.CipherBulkMoveRequestModel cipherBulkMoveRequestModel, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: PUT /api/ciphers/share
   /// </summary>
-  Task<CipherMiniResponseModelListResponseModel> CiphersPutShareManyAsync(Apigen.Vaultwarden.Models.CipherBulkShareRequestModel cipherBulkShareRequestModel);
+  Task<CipherMiniResponseModelListResponseModel> CiphersPutShareManyAsync(Apigen.Vaultwarden.Models.CipherBulkShareRequestModel cipherBulkShareRequestModel, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: POST /api/ciphers/purge
   /// </summary>
-  Task CiphersPostPurgeAsync(Apigen.Vaultwarden.Models.SecretVerificationRequestModel secretVerificationRequestModel, CiphersPostPurgeRequest? request = null);
+  Task CiphersPostPurgeAsync(Apigen.Vaultwarden.Models.SecretVerificationRequestModel secretVerificationRequestModel, CiphersPostPurgeRequest? request = null, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: POST /api/ciphers/{id}/attachment/v2
   /// </summary>
-  Task<AttachmentUploadDataResponseModel> CiphersPostAttachmentAsync(string id, Apigen.Vaultwarden.Models.AttachmentRequestModel attachmentRequestModel);
+  Task<AttachmentUploadDataResponseModel> CiphersPostAttachmentAsync(string id, Apigen.Vaultwarden.Models.AttachmentRequestModel attachmentRequestModel, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: POST /api/ciphers/{id}/attachment/{attachmentId}
   /// </summary>
-  Task CiphersPostFileForExistingAttachmentAsync(string id, string attachmentId);
+  Task CiphersPostFileForExistingAttachmentAsync(string id, string attachmentId, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: GET /api/ciphers/{id}/attachment/{attachmentId}
   /// </summary>
-  Task<AttachmentResponseModel> GetAsync(string id, string attachmentId);
+  Task<AttachmentResponseModel> GetAsync(string id, string attachmentId, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: DELETE /api/ciphers/{id}/attachment/{attachmentId}
   /// </summary>
-  Task<DeleteAttachmentResponseData> DeleteAsync(string id, string attachmentId);
+  Task<DeleteAttachmentResponseData> DeleteAsync(string id, string attachmentId, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: POST /api/ciphers/{id}/attachment
   /// </summary>
-  Task<CipherResponseModel> CiphersPostAttachmentV1Async(string id);
+  Task<CipherResponseModel> CiphersPostAttachmentV1Async(string id, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: POST /api/ciphers/{id}/attachment-admin
   /// </summary>
-  Task<CipherMiniResponseModel> CiphersPostAttachmentAdminAsync(string id);
+  Task<CipherMiniResponseModel> CiphersPostAttachmentAdminAsync(string id, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: DELETE /api/ciphers/{id}/attachment/{attachmentId}/admin
   /// </summary>
-  Task<DeleteAttachmentResponseData> CiphersDeleteAttachmentAdminAsync(string id, string attachmentId);
+  Task<DeleteAttachmentResponseData> CiphersDeleteAttachmentAdminAsync(string id, string attachmentId, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: POST /api/ciphers/{id}/attachment/{attachmentId}/share
   /// </summary>
-  Task CiphersPostAttachmentShareAsync(string id, string attachmentId, CiphersPostAttachmentShareRequest? request = null);
+  Task CiphersPostAttachmentShareAsync(string id, string attachmentId, CiphersPostAttachmentShareRequest? request = null, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: POST /api/ciphers/{id}/attachment/{attachmentId}/delete
   /// </summary>
-  Task<DeleteAttachmentResponseData> CiphersPostDeleteAttachmentAsync(string id, string attachmentId);
+  Task<DeleteAttachmentResponseData> CiphersPostDeleteAttachmentAsync(string id, string attachmentId, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: POST /api/ciphers/{id}/attachment/{attachmentId}/delete-admin
   /// </summary>
-  Task<DeleteAttachmentResponseData> CiphersPostDeleteAttachmentAdminAsync(string id, string attachmentId);
+  Task<DeleteAttachmentResponseData> CiphersPostDeleteAttachmentAdminAsync(string id, string attachmentId, CancellationToken cancellationToken = default);
 
 }

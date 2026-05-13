@@ -1,4 +1,5 @@
 using System.Text.Json;
+using System.Threading;
 using System.Threading.Tasks;
 using Apigen.Vaultwarden.Models;
 
@@ -15,6 +16,6 @@ public partial interface IAccountsKeyManagementClient
   /// 
   /// Operation: POST /api/accounts/key-management/rotate-user-account-keys
   /// </summary>
-  Task AccountsKeyManagementRotateUserAccountKeysAsync(Apigen.Vaultwarden.Models.RotateUserAccountKeysAndDataRequestModel rotateUserAccountKeysAndDataRequestModel);
+  Task AccountsKeyManagementRotateUserAccountKeysAsync(Apigen.Vaultwarden.Models.RotateUserAccountKeysAndDataRequestModel rotateUserAccountKeysAndDataRequestModel, CancellationToken cancellationToken = default);
 
 }

@@ -1,4 +1,5 @@
 using System.Text.Json;
+using System.Threading;
 using System.Threading.Tasks;
 using Apigen.Vaultwarden.Models;
 
@@ -15,36 +16,36 @@ public partial interface IAuthRequestsClient
   /// 
   /// Operation: GET /api/auth-requests
   /// </summary>
-  Task<AuthRequestResponseModelListResponseModel> AuthRequestsGetAllAsync();
+  Task<AuthRequestResponseModelListResponseModel> AuthRequestsGetAllAsync(CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: POST /api/auth-requests
   /// </summary>
-  Task<AuthRequestResponseModel> AuthRequestsPostAsync(Apigen.Vaultwarden.Models.AuthRequestCreateRequestModel authRequestCreateRequestModel);
+  Task<AuthRequestResponseModel> AuthRequestsPostAsync(Apigen.Vaultwarden.Models.AuthRequestCreateRequestModel authRequestCreateRequestModel, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: GET /api/auth-requests/{id}
   /// </summary>
-  Task<AuthRequestResponseModel> GetAsync(string id);
+  Task<AuthRequestResponseModel> GetAsync(string id, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: PUT /api/auth-requests/{id}
   /// </summary>
-  Task<AuthRequestResponseModel> UpdateAsync(string id, Apigen.Vaultwarden.Models.AuthRequestUpdateRequestModel authRequestUpdateRequestModel);
+  Task<AuthRequestResponseModel> UpdateAsync(string id, Apigen.Vaultwarden.Models.AuthRequestUpdateRequestModel authRequestUpdateRequestModel, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: GET /api/auth-requests/pending
   /// </summary>
-  Task<PendingAuthRequestResponseModelListResponseModel> AuthRequestsGetPendingAuthRequestsAsync();
+  Task<PendingAuthRequestResponseModelListResponseModel> AuthRequestsGetPendingAuthRequestsAsync(CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: GET /api/auth-requests/{id}/response
   /// </summary>
-  Task<AuthRequestResponseModel> AuthRequestsGetResponseAsync(string id, AuthRequestsGetResponseRequest? request = null);
+  Task<AuthRequestResponseModel> AuthRequestsGetResponseAsync(string id, AuthRequestsGetResponseRequest? request = null, CancellationToken cancellationToken = default);
 
 }

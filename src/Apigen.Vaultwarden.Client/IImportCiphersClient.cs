@@ -1,4 +1,5 @@
 using System.Text.Json;
+using System.Threading;
 using System.Threading.Tasks;
 using Apigen.Vaultwarden.Models;
 
@@ -15,12 +16,12 @@ public partial interface IImportCiphersClient
   /// 
   /// Operation: POST /api/ciphers/import
   /// </summary>
-  Task ImportCiphersPostImportAsync(Apigen.Vaultwarden.Models.ImportCiphersRequestModel importCiphersRequestModel);
+  Task ImportCiphersPostImportAsync(Apigen.Vaultwarden.Models.ImportCiphersRequestModel importCiphersRequestModel, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: POST /api/ciphers/import-organization
   /// </summary>
-  Task ImportCiphersPostImportOrganizationAsync(Apigen.Vaultwarden.Models.ImportOrganizationCiphersRequestModel importOrganizationCiphersRequestModel, ImportCiphersPostImportOrganizationRequest? request = null);
+  Task ImportCiphersPostImportOrganizationAsync(Apigen.Vaultwarden.Models.ImportOrganizationCiphersRequestModel importOrganizationCiphersRequestModel, ImportCiphersPostImportOrganizationRequest? request = null, CancellationToken cancellationToken = default);
 
 }

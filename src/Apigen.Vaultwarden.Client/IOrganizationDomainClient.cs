@@ -1,4 +1,5 @@
 using System.Text.Json;
+using System.Threading;
 using System.Threading.Tasks;
 using Apigen.Vaultwarden.Models;
 
@@ -15,6 +16,6 @@ public partial interface IOrganizationDomainClient
   /// 
   /// Operation: POST /api/organizations/domain/sso/verified
   /// </summary>
-  Task<VerifiedOrganizationDomainSsoDetailsResponseModel> OrganizationDomainGetVerifiedOrgDomainSsoDetailsAsync(Apigen.Vaultwarden.Models.OrganizationDomainSsoDetailsRequestModel organizationDomainSsoDetailsRequestModel);
+  Task<VerifiedOrganizationDomainSsoDetailsResponseModel> OrganizationDomainGetVerifiedOrgDomainSsoDetailsAsync(Apigen.Vaultwarden.Models.OrganizationDomainSsoDetailsRequestModel organizationDomainSsoDetailsRequestModel, CancellationToken cancellationToken = default);
 
 }

@@ -1,4 +1,5 @@
 using System.Text.Json;
+using System.Threading;
 using System.Threading.Tasks;
 using Apigen.Vaultwarden.Models;
 
@@ -15,6 +16,6 @@ public partial interface IOrganizationBillingVNextClient
   /// 
   /// Operation: GET /api/organizations/{organizationId}/billing/vnext/warnings
   /// </summary>
-  Task OrganizationBillingVNextGetWarningsAsync(string organizationId, OrganizationBillingVNextGetWarningsRequest? request = null);
+  Task OrganizationBillingVNextGetWarningsAsync(string organizationId, OrganizationBillingVNextGetWarningsRequest? request = null, CancellationToken cancellationToken = default);
 
 }

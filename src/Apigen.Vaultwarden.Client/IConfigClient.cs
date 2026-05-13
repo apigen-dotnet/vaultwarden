@@ -1,4 +1,5 @@
 using System.Text.Json;
+using System.Threading;
 using System.Threading.Tasks;
 using Apigen.Vaultwarden.Models;
 
@@ -15,6 +16,6 @@ public partial interface IConfigClient
   /// 
   /// Operation: GET /api/config
   /// </summary>
-  Task<ConfigResponseModel> ConfigGetConfigsAsync();
+  Task<ConfigResponseModel> ConfigGetConfigsAsync(CancellationToken cancellationToken = default);
 
 }

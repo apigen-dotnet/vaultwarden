@@ -1,4 +1,5 @@
 using System.Text.Json;
+using System.Threading;
 using System.Threading.Tasks;
 using Apigen.Vaultwarden.Models;
 
@@ -15,6 +16,6 @@ public partial interface ISecurityTaskClient
   /// Retrieves security tasks for the current user.
   /// Operation: GET /api/tasks
   /// </summary>
-  Task<SecurityTasksResponseModelListResponseModel> SecurityTaskGetAsync(SecurityTaskGetRequest? request = null);
+  Task<SecurityTasksResponseModelListResponseModel> SecurityTaskGetAsync(SecurityTaskGetRequest? request = null, CancellationToken cancellationToken = default);
 
 }

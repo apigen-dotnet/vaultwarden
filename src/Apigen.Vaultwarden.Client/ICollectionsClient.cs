@@ -1,4 +1,5 @@
 using System.Text.Json;
+using System.Threading;
 using System.Threading.Tasks;
 using Apigen.Vaultwarden.Models;
 
@@ -15,72 +16,72 @@ public partial interface ICollectionsClient
   /// 
   /// Operation: PUT /api/organizations/{orgId}/collections/{id}
   /// </summary>
-  Task<CollectionResponseModel> UpdateAsync(string orgId, string id, Apigen.Vaultwarden.Models.UpdateCollectionRequestModel updateCollectionRequestModel);
+  Task<CollectionResponseModel> UpdateAsync(string orgId, string id, Apigen.Vaultwarden.Models.UpdateCollectionRequestModel updateCollectionRequestModel, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: POST /api/organizations/{orgId}/collections/{id}
   /// </summary>
-  Task<CollectionResponseModel> CollectionsPostPutAsync(string orgId, string id, Apigen.Vaultwarden.Models.UpdateCollectionRequestModel updateCollectionRequestModel);
+  Task<CollectionResponseModel> CollectionsPostPutAsync(string orgId, string id, Apigen.Vaultwarden.Models.UpdateCollectionRequestModel updateCollectionRequestModel, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: DELETE /api/organizations/{orgId}/collections/{id}
   /// </summary>
-  Task DeleteAsync(string orgId, string id);
+  Task DeleteAsync(string orgId, string id, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: GET /api/organizations/{orgId}/collections/{id}/details
   /// </summary>
-  Task<CollectionAccessDetailsResponseModel> CollectionsGetDetailsAsync(string orgId, string id);
+  Task<CollectionAccessDetailsResponseModel> CollectionsGetDetailsAsync(string orgId, string id, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: GET /api/organizations/{orgId}/collections/details
   /// </summary>
-  Task<CollectionAccessDetailsResponseModelListResponseModel> CollectionsGetManyWithDetailsAsync(string orgId);
+  Task<CollectionAccessDetailsResponseModelListResponseModel> CollectionsGetManyWithDetailsAsync(string orgId, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: GET /api/organizations/{orgId}/collections
   /// </summary>
-  Task<CollectionResponseModelListResponseModel> CollectionsGetAllAsync(string orgId);
+  Task<CollectionResponseModelListResponseModel> CollectionsGetAllAsync(string orgId, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: POST /api/organizations/{orgId}/collections
   /// </summary>
-  Task<CollectionResponseModel> CollectionsPostAsync(string orgId, Apigen.Vaultwarden.Models.CreateCollectionRequestModel createCollectionRequestModel);
+  Task<CollectionResponseModel> CollectionsPostAsync(string orgId, Apigen.Vaultwarden.Models.CreateCollectionRequestModel createCollectionRequestModel, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: DELETE /api/organizations/{orgId}/collections
   /// </summary>
-  Task CollectionsDeleteManyAsync(string orgId, Apigen.Vaultwarden.Models.CollectionBulkDeleteRequestModel collectionBulkDeleteRequestModel);
+  Task CollectionsDeleteManyAsync(string orgId, Apigen.Vaultwarden.Models.CollectionBulkDeleteRequestModel collectionBulkDeleteRequestModel, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: GET /api/collections
   /// </summary>
-  Task<CollectionDetailsResponseModelListResponseModel> CollectionsGetUserAsync();
+  Task<CollectionDetailsResponseModelListResponseModel> CollectionsGetUserAsync(CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: GET /api/organizations/{orgId}/collections/{id}/users
   /// </summary>
-  Task<List<SelectionReadOnlyResponseModel>> CollectionsGetUsersAsync(string orgId, string id);
+  Task<List<SelectionReadOnlyResponseModel>> CollectionsGetUsersAsync(string orgId, string id, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: POST /api/organizations/{orgId}/collections/bulk-access
   /// </summary>
-  Task BulkAsync(string orgId, Apigen.Vaultwarden.Models.BulkCollectionAccessRequestModel bulkCollectionAccessRequestModel);
+  Task BulkAsync(string orgId, Apigen.Vaultwarden.Models.BulkCollectionAccessRequestModel bulkCollectionAccessRequestModel, CancellationToken cancellationToken = default);
 
   /// <summary>
   /// 
   /// Operation: POST /api/organizations/{orgId}/collections/{id}/delete
   /// </summary>
-  Task CollectionsPostDeleteAsync(string orgId, string id);
+  Task CollectionsPostDeleteAsync(string orgId, string id, CancellationToken cancellationToken = default);
 
 }

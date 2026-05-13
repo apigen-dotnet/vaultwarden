@@ -1,4 +1,5 @@
 using System.Text.Json;
+using System.Threading;
 using System.Threading.Tasks;
 using Apigen.Vaultwarden.Models;
 
@@ -15,6 +16,6 @@ public partial interface IHibpClient
   /// 
   /// Operation: GET /api/hibp/breach
   /// </summary>
-  Task HibpGetAsync(HibpGetRequest? request = null);
+  Task HibpGetAsync(HibpGetRequest? request = null, CancellationToken cancellationToken = default);
 
 }
